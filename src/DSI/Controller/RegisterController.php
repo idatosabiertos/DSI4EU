@@ -58,7 +58,7 @@ class RegisterController
         curl_setopt($ch, CURLOPT_URL, 'https://www.google.com/recaptcha/api/siteverify');
         curl_setopt($ch, CURLOPT_POST, TRUE);
         curl_setopt($ch, CURLOPT_POSTFIELDS, [
-            'secret' => '6Ldc3QgUAAAAALNmk8zJczokhAVEa_7mvUpEotQ_',
+            'secret' => '6LfjZ1UUAAAAAGR_vO2Nd3LBlgTXTSUM3yp27Aml',
             'response' => $_POST['g-recaptcha-response'],
             'remoteip' => $_SERVER['REMOTE_ADDR']
         ]);

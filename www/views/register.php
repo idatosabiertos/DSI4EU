@@ -46,7 +46,7 @@ use \DSI\Service\URL;
                     <?php } ?>
 
                     <div style="width:300px;margin:auto;padding-top:30px">
-                        <div class="g-recaptcha" data-sitekey="6Ldc3QgUAAAAANlNhW7nwIUOI1TR3Uzsw8BTtO5D"></div>
+                        <div class="g-recaptcha" data-sitekey="6LfjZ1UUAAAAAI1dqp7xF6BLHdXcPKty8YFrtnce"></div>
                     </div>
 
                     <?php if (isset($errors['captcha'])) { ?>
