@@ -139,7 +139,7 @@ class ProjectEditController
             $data = ['project' => $project];
             $tags = (new TagForProjectsRepo())->getAll();
             $impactTags = (new ImpactTagRepo())->getAll();
-            $impactMainTags = array_slice($impactTags, 0, 9);
+            $impactMainTags = array_slice($impactTags, 0, 20);
             $impactSecondaryTags = array_slice($impactTags, 9);
             $dsiFocusTags = (new DsiFocusTagRepo())->getAll();
             $projectImpactTagsA = (new ProjectImpactHelpTagRepo())->getTagNamesByProject($project);
