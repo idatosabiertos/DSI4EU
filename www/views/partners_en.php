@@ -19,7 +19,7 @@ require __DIR__ . '/header.php' ?>
                 <div class="partner-block w-row">
                     <div class="w-col w-col-3">
                         <img class="partner-logo-colour"
-                             src="<?php echo SITE_RELATIVE_PATH ?>/images/partners/nesta.png">
+                             src="<?php echo SITE_RELATIVE_PATH ?>/images/partners/bid.png">
                     </div>
                     <div class="w-col w-col-9">
                         <p><a href="http://nesta.org.uk"><strong>Nesta</strong></a> is a global innovation foundation.
@@ -54,7 +54,7 @@ require __DIR__ . '/header.php' ?>
 
                 <div class="partner-block w-row">
                     <div class="w-col w-col-3">
-                        <img class="partner-logo-colour" src="<?php echo SITE_RELATIVE_PATH ?>/images/partners/waag.jpg">
+                        <img class="partner-logo-colour" src="<?php echo SITE_RELATIVE_PATH ?>/images/partners/avina.jpg">
                     </div>
                     <div class="w-col w-col-9">
                         <p><a href="http://waag.org"><strong>Waag</strong></a>&nbsp;&mdash; the institute for art,
@@ -80,7 +80,7 @@ require __DIR__ . '/header.php' ?>
 
                 <div class="partner-block w-row">
                     <div class="w-col w-col-3">
-                        <img class="partner-logo-colour" src="<?php echo SITE_RELATIVE_PATH ?>/images/partners/betterplace.png">
+                        <img class="partner-logo-colour" src="<?php echo SITE_RELATIVE_PATH ?>/images/partners/avina.png">
                     </div>
                     <div class="w-col w-col-9">
                         <p><a href="http://www.betterplace-lab.org/en/"><strong>betterplace lab</strong></a>&nbsp;is a
@@ -245,7 +245,7 @@ require __DIR__ . '/header.php' ?>
                     Horizon 2020-funded project which seeks to strengthen, connect and grow existing social innovation
                     communities across Europe. Social Innovation Community is based around specific networks, one of
                     which is DSI. By fostering close links between the two projects, we are able to introduce DSI actors
-                    to other social innovation actors, and vice versa. Please <a href="mailto:contact@digitalsocial.eu">get
+                    to other social innovation actors, and vice versa. Please <a href="mailto:contacto@idatosabiertos.org">get
                         in touch</a> if you would like to learn more. </p>
                 <p>&nbsp;</p>
                 <p><em>*DSI4EU is the operating name for the project formally known as DSISCALE. DSISCALE is supported

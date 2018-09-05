@@ -16,11 +16,12 @@ if (!isset($urlHandler))
     <div class="twitter">
         <div class="w-row">
             <div class="w-col w-col-1 w-col-small-1 w-col-tiny-tiny-stack">
-                <img class="homepage-twitter-logo" src="https://digitalsocial.eu/images/twitter-logo-silhouette.png">
+                <img class="homepage-twitter-logo" src="https://ds.idatosabiertos.org/images/twitter-logo-silhouette.png">
             </div>
             <div class="w-col w-col-11 w-col-small-11 w-col-tiny-tiny-stack">
                 <p class="twitter-text">
-                    <?php _e('To keep in touch with the project and DSI in Europe, follow us on Twitter @DSI4EU and sign up to our newsletter.'); ?>
+                    <?php _e('To keep in touch with the project, open data initiatives and civic technology in Latin America, follow us on Twitter'); ?>
+                    <a href="https://twitter.com/idatosabiertos" target="blank"><strong style="color:white;">@IDATOSABIERTOS</strong></a>
                 </p>
             </div>
         </div>
@@ -75,10 +76,10 @@ if (!isset($urlHandler))
             <div class="w-col w-col-2">
                 <h3 class="footer-h3"><?php _ehtml('Development') ?></h3>
                 <ul class="w-list-unstyled">
-                    <li class="footer-link">
+                  <!--  <li class="footer-link">
                         <a class="footer-link"
                            href="<?php echo $urlHandler->updates() ?>"><?php _ehtml('Updates') ?></a>
-                    </li>
+                    </li> -->
                     <li class="footer-link">
                         <a class="footer-link"
                            href="<?php echo $urlHandler->feedback() ?>"><?php _ehtml('Feedback') ?></a>
@@ -91,8 +92,10 @@ if (!isset($urlHandler))
                 <div>
                     <div class="w-row">
                         <div class="w-clearfix w-col w-col-2 w-col-medium-6 w-col-small-6 w-col-tiny-6">
-                            <img class="footer-eu" src="<?php echo SITE_RELATIVE_PATH ?>/images/5000100-mono.png">
-                        </div>
+                        <a href="http://nesta.org.uk" target="_blank">
+                            <img style="height:43px;width:auto"
+                                 src="<?php echo SITE_RELATIVE_PATH ?>/images/home-logos/nesta.gif">
+                        </a>                        </div>
                         <div class="w-col w-col-10 w-col-medium-6 w-col-small-6 w-col-tiny-6">
                             <div class="footer-small-print">
                                 <?php _ehtml('DSI4EU, formally known as DSISCALE, is supported by the European Union and funded under the Horizon 2020 Programme, grant agreement no 780473.') ?>
@@ -121,47 +124,41 @@ if (!isset($urlHandler))
             <div class="w-col w-col-6">
                 <div class="w-row">
                     <div class="footer-logo-col w-clearfix w-col w-col-3">
-                        <a class="footer-partner-link w-inline-block" href="http://nesta.org.uk" target="_blank">
-                            <img class="footer-partner-logo" style="height:50px;width:auto"
-                                 src="<?php echo SITE_RELATIVE_PATH ?>/images/home-logos/nesta.gif">
+                        <a class="footer-partner-link w-inline-block" href="https://www.iadb.org/" target="_blank">
+                            <img class="footer-partner-logo" style="height:38px;width:auto"
+                                 src="<?php echo SITE_RELATIVE_PATH ?>/images/partners/bid.png">
                         </a>
                     </div>
                     <div class="footer-logo-col w-clearfix w-col w-col-3">
-                        <a class="footer-partner-link w-inline-block" href="http://www.betterplace-lab.org/en/"
+                        <a class="footer-partner-link w-inline-block" href="http://www.avina.net/avina/"
                            target="_blank">
-                            <img class="footer-partner-logo" style="height:50px;width:auto"
-                                 src="<?php echo SITE_RELATIVE_PATH ?>/images/home-logos/betterplace.png">
+                            <img class="footer-partner-logo" style="height:38px;width:auto"
+                                 src="<?php echo SITE_RELATIVE_PATH ?>/images/partners/avina.jpg">
                         </a>
                     </div>
                     <div class="footer-logo-col w-clearfix w-col w-col-3">
-                        <a class="footer-partner-link w-inline-block" href="http://waag.org" target="_blank">
+                        <a class="footer-partner-link w-inline-block" href="https://www.omidyar.com/" target="_blank">
                             <img class="footer-partner-logo" style="height:50px;width:auto"
-                                 src="<?php echo SITE_RELATIVE_PATH ?>/images/home-logos/waag.gif">
+                                 src="<?php echo SITE_RELATIVE_PATH ?>/images/partners/on.png">
                         </a>
                     </div>
                     <div class="footer-logo-col w-clearfix w-col w-col-3">
-                        <a class="footer-partner-link w-inline-block" href="http://wemake.cc" target="_blank">
+                       <a class="footer-partner-link w-inline-block" href="http://od4d.net/"
+                                   target="_blank">
                             <img class="footer-partner-logo" style="height:50px;width:auto"
-                                 src="<?php echo SITE_RELATIVE_PATH ?>/images/home-logos/wemake.gif">
+                                         src="<?php echo SITE_RELATIVE_PATH ?>/images/partners/op4d.png">
                         </a>
                     </div>
-                    <div class="footer-logo-col w-clearfix w-col w-col-4">
-                        <a class="footer-partner-link w-inline-block" href="http://fablabbcn.org" target="_blank">
-                            <img class="footer-partner-logo" style="height:50px;width:auto"
-                                 src="<?php echo SITE_RELATIVE_PATH ?>/images/home-logos/fablab.gif">
+                    <div class="footer-logo-col w-clearfix w-col w-col-3">
+                        <a class="footer-partner-link w-inline-block" href="https://www.idrc.ca/" target="_blank">
+                            <img class="footer-partner-logo" style="height:35px;width:auto"
+                                 src="<?php echo SITE_RELATIVE_PATH ?>/images/partners/idrc.png">
                         </a>
                     </div>
-                    <div class="footer-logo-col w-clearfix w-col w-col-4">
-                        <a class="footer-partner-link w-inline-block" href="http://www.barcelonactiva.cat/"
-                           target="_blank">
-                            <img class="footer-partner-logo" style="height:50px;width:auto"
-                                 src="<?php echo SITE_RELATIVE_PATH ?>/images/home-logos/barcelona-activa.gif">
-                        </a>
-                    </div>
-                    <div class="footer-logo-col w-clearfix w-col w-col-4">
-                        <a class="footer-partner-link w-inline-block" href="http://epf.org.pl/" target="_blank">
-                            <img class="footer-partner-logo" style="height:50px;width:auto"
-                                 src="<?php echo SITE_RELATIVE_PATH ?>/images/home-logos/epantswo.png">
+                    <div class="footer-logo-col w-clearfix w-col w-col-3">
+                        <a class="footer-partner-link w-inline-block" href="https://altec.lat/" target="_blank">
+                                <img class="footer-partner-logo" style="height:30px;width:auto"
+                                     src="<?php echo SITE_RELATIVE_PATH ?>/images/partners/altec.png">
                         </a>
                     </div>
                 </div>

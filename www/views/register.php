@@ -13,7 +13,7 @@ use \DSI\Service\URL;
     <div class="w-row">
         <div class="content-left w-col w-col-12">
             <a href="<?php echo $urlHandler->home() ?>">
-                <img class="log-in-logo" src="<?php echo SITE_RELATIVE_PATH ?>/images/dark_1.svg">
+                <img class="log-in-logo" src="<?php echo SITE_RELATIVE_PATH ?>/images/dark.png">
             </a>
             <h2><?php _ehtml('Register') ?></h2>
 

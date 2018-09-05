@@ -16,7 +16,7 @@ if (!isset($urlHandler))
                 forward to seeing your work on the platform soon!</p>
             <p class="paragraph">In the meantime, please do sign up to our newsletter through the homepage, and if you
                 have any questions drop us a line at <a
-                        href="mailto:contact@digitalsocial.eu">contact@digitalsocial.eu</a>.</p>
+                        href="mailto:contacto@idatosabiertos.org">contacto@idatosabiertos.org</a>.</p>
             <div data-ix="close-notification-modal" class="close-modal">+</div>
         </div>
     </div>
@@ -120,7 +120,7 @@ if (!isset($urlHandler))
                 </div>
             </div>
             <div class="full-menu-items w-row">
-                <div class="full-menu-col w-clearfix w-col w-col-4">
+             <!-- <div class="full-menu-col w-clearfix w-col w-col-4">
                     <h2 class="full-menu-h2"><?php _e('Funding & support') ?></h2>
                     <div class="full-menu-links-block no-border">
                         <a class="full-menu-link" href="<?php echo $urlHandler->funding() ?>">
@@ -135,7 +135,7 @@ if (!isset($urlHandler))
                             <?php _e('See upcoming DSI events') ?>
                         </a>
                     </div>
-                </div>
+                </div> -->
                 <div class="full-menu-col w-clearfix w-col w-col-4">
                     <h2 class="full-menu-h2"><?php _e('News & blogs') ?></h2>
                     <div class="full-menu-links-block no-border">
@@ -208,7 +208,7 @@ if (!isset($urlHandler))
 <?php /*
 <div class="alt nav-main w-nav white-menu" data-animation="default" data-collapse="medium" data-duration="400">
     <a class="w-nav-brand" href="<?php echo $urlHandler->home() ?>">
-        <img class="logo-dark" src="<?php echo SITE_RELATIVE_PATH ?>/images/dark.svg">
+        <img class="logo-dark" src="<?php echo SITE_RELATIVE_PATH ?>/images/dark.png">
         <div class="beta-badge">Beta</div>
     </a>
     <nav class="nav-menu w-nav-menu" role="navigation">

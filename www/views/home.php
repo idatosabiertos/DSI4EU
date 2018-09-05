@@ -15,6 +15,8 @@ if (!isset($urlHandler))
 ?><!DOCTYPE html>
 <html data-wf-site="56e2e31a1b1f8f784728a08c" data-wf-page="56fbef6ecf591b312d56f8be">
 <head>
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
     <?php require __DIR__ . '/partialViews/head.php' ?>
 </head>
 <body id="top" ng-app="DSIApp">
@@ -29,9 +31,9 @@ if (!isset($urlHandler))
     <div class="hero">
         <div class="w-row">
             <div class="w-col w-col-7">
-                <h1 class="home-hero-h1" data-ix="fadeinuponload-6"><?php _e('Digital social innovation') ?></h1>
+                <h1 class="home-hero-h1" data-ix="fadeinuponload-6"><span style="font-weight: 300;"><?php _e('Explore') ?></span><br/>LATAM</h1>
                 <h3 class="home-hero-h3 main" data-ix="fadeinuponload-7">
-                    <?php _e('SHOWCASE YOUR PROJECT, MEET COLLABORATORS AND FIND FUNDING') ?>
+                    <?php _e('Map of open data, civic technology and social innovation in Latam') ?>
                 </h3>
             </div>
             <div class="w-col w-col-5">
@@ -41,23 +43,31 @@ if (!isset($urlHandler))
         </div>
     </div>
 </div>
+
+<div class="stats-bg">
+    <div class="content">
+        <h2 class="centered h2-large" data-ix="fadeinuponload-2">
+            <?php _e("Who is opening Latin America?") ?>
+        </h2>
+
+        <?php require __DIR__ . '/partialViews/index-' . \DSI\Service\Translate::getCurrentLang() . '.php'; ?>
+    </div>
+</div>
 <div class="hero-cta" data-ix="fadeinuponload-9">
     <div class="cta-row w-row">
         <div class="w-clearfix w-col w-col-8 w-col-stack">
             <div class="cta-text">
                 <div class="home-hero-cta" data-ix="fadeinuponload-10">
                     <?php echo sprintf(
-                        __('Join the community of %s organisations and %s projects'),
+                        __('Present your organization and / or your project and explore potential collaborators. Discover innovative uses and projects of your interest close to you'),
                         '<span class="sub-bold">' .
                         sprintf(
-                            __('%s organisations'),
-                            number_format($organisationsCount)
+                            __('organization')
                         )
                         . '</span>',
                         '<span class="sub-bold">' .
                         sprintf(
-                            __('%s projects'),
-                            number_format($projectsCount)
+                            __('project')
                         )
                         . '</span>'
                     ) ?>
@@ -75,107 +85,27 @@ if (!isset($urlHandler))
         </div>
     </div>
 </div>
-<div class="top-3">
-    <div class="w-row">
-        <div class="top-3-col w-col w-col-4" data-ix="fadeinuponload-12">
-            <div class="top-3-link" data-ix="underline">
-                <h3 class="top3-h3"><?php _e('FUNDING') ?></h3>
-                <div class="top3-underline" data-ix="new-interaction-2"></div>
-                <p class="top-3-p"><?php _e('Use our funding directory to find opportunities for your project') ?></p>
-                <a class="log-in-link read-more w-clearfix w-inline-block" data-ix="log-in-arrow"
-                   href="<?php echo $urlHandler->funding() ?>">
-                    <div class="login-li menu-li readmore-li"><?php _ehtml('Read more') ?></div>
-                    <img class="login-arrow" src="<?php echo SITE_RELATIVE_PATH ?>/images/ios7-arrow-thin-right.png">
-                </a>
-            </div>
-        </div>
-        <div class="top-3-col w-col w-col-4" data-ix="fadeinuponload-13">
-            <div class="top-3-link" data-ix="underline">
-                <h3 class="top3-h3"><?php _ehtml('Events') ?></h3>
-                <div class="top3-underline" data-ix="new-interaction-2"></div>
-                <p class="top-3-p"><?php _e('Explore DSI events happening around Europe') ?></p>
-                <a class="log-in-link read-more w-clearfix w-inline-block" data-ix="log-in-arrow"
-                   href="<?php echo $urlHandler->events() ?>">
-                    <div class="login-li menu-li readmore-li"><?php _ehtml('Read more') ?></div>
-                    <img class="login-arrow" src="<?php echo SITE_RELATIVE_PATH ?>/images/ios7-arrow-thin-right.png">
-                </a>
-            </div>
-        </div>
-        <div class="top-3-col w-col w-col-4" data-ix="fadeinuponload-14">
-            <div class="top-3-link" data-ix="underline">
-                <h3 class="top3-h3"><?php _ehtml('News & blogs') ?></h3>
-                <div class="top3-underline" data-ix="new-interaction-2"></div>
-                <p class="top-3-p">
-                    <?php _e('Our blog features stories of the people and projects pioneering digital social innovation') ?>
-                </p>
-                <a class="log-in-link read-more w-clearfix w-inline-block" data-ix="log-in-arrow"
-                   href="<?php echo $urlHandler->blogPosts() ?>">
-                    <div class="login-li menu-li readmore-li"><?php _ehtml('Read more') ?></div>
-                    <img class="login-arrow" src="<?php echo SITE_RELATIVE_PATH ?>/images/ios7-arrow-thin-right.png">
-                </a>
-            </div>
-        </div>
-    </div>
-</div>
-<div class="stats-bg">
-    <div class="content">
-        <h2 class="centered h2-large" data-ix="fadeinuponload-2">
-            <?php _e("EXPLORE EUROPE’S GROWING NETWORK OF DIGITAL SOCIAL INNOVATION") ?>
-        </h2>
 
-        <?php require __DIR__ . '/partialViews/index-' . \DSI\Service\Translate::getCurrentLang() . '.php'; ?>
+<div class="w-row">
+    <div class="carousel" style="margin-top:20px;"
+      data-flickity='{ "wrapAround": true}'>
+      <img src="<?php echo SITE_RELATIVE_PATH ?>/images/map-placeholders/Carousell-01-01.png" alt="" />
+      <img src="<?php echo SITE_RELATIVE_PATH ?>/images/map-placeholders/Carousell-01-02.png" alt="" />
+      <img src="<?php echo SITE_RELATIVE_PATH ?>/images/map-placeholders/Carousell-01-03.png" alt="" />
+      <img src="<?php echo SITE_RELATIVE_PATH ?>/images/map-placeholders/Carousell-01-04.png" alt="" />
     </div>
-</div>
 
-<div class="datavis stats-bg" data-ix="show-data-vis" id="datavis"
-     onclick="window.open('<?= \DSI\Service\DataVis::getUrl() ?>', '_blank');">
-    <div class="content">
-        <div class="row w-row">
-            <div class="column-2 w-clearfix w-col w-col-6 w-col-stack">
-                <h3 class="data-h3">Data visualisation</h3>
-                <h2 class="data h2-large" data-ix="fadeinuponload-2">
-                    Explore Europe’s network of digital social innovation
-                </h2>
-                <p class="data-p">
-                    There are <?= $organisationsCount ?> organisations and <?= $projectsCount ?> projects working on DSI
-                    across Europe.
-                </p>
-                <p class="data-p">
-                    With our interactive data visualisation, you can explore the organisations and projects working on
-                    DSI across Europe. Check it out now to understand what’s going on across the continent and how you
-                    fit into it!
-                </p>
-                <a class="large log-in-link sign-up w-clearfix w-inline-block" data-ix="log-in-arrow" href="#">
-                    <div class="data-button login-li menu-li">Explore Europe’s DSI network</div>
-                    <img class="login-arrow" src="<?= SITE_RELATIVE_PATH ?>/images/ios7-arrow-thin-right.png">
-                </a>
-            </div>
-            <div class="column w-col w-col-6 w-col-stack">
-                <div class="div-block-3">
-                    <div class="map-point mp3" data-ix="map-point-expand"></div>
-                    <div class="map-point mp5" data-ix="map-point-expand"></div>
-                    <div class="map-point mp13" data-ix="map-point-expand"></div>
-                    <div class="map-point mp12" data-ix="map-point-expand"></div>
-                    <div class="map-point" data-ix="map-point-expand"></div>
-                    <div class="map-point mp9" data-ix="map-point-expand-3"></div>
-                    <div class="map-point mp8" data-ix="map-point-expand-3"></div>
-                    <div class="map-point mp7" data-ix="map-point-expand-3"></div>
-                    <div class="map-point mp4" data-ix="map-point-expand-2"></div>
-                    <div class="map-point mp11" data-ix="map-point-expand-2"></div>
-                    <div class="map-point mp14" data-ix="map-point-expand-2"></div>
-                    <div class="map-point mp10" data-ix="map-point-expand-2"></div>
-                    <div class="map-point mp6" data-ix="map-point-expand-2"></div>
-                    <div class="map-point mp2" data-ix="map-point-expand-2"></div>
-                </div>
-            </div>
-        </div>
+    <div class="signn" style="margin-top:50px;">
+        <a class="large log-in-link sign-up w-clearfix w-inline-block" data-ix="log-in-arrow" href="http://dsmap.idatosabiertos.org/">
+            <div class="data-button login-li menu-li"><?php _e('EXPLORE EUROPE’S GROWING NETWORK OF DIGITAL SOCIAL INNOVATION') ?></div>
+            <img class="login-arrow" src="<?= SITE_RELATIVE_PATH ?>/images/ios7-arrow-thin-right.png">
+        </a>
     </div>
 </div>
 
 <div class="home-page-events">
     <div class="content-block cs">
         <h3 class="centered title"><?php _ehtml('Case Studies') ?></h3>
-        <div class="sub-header-centre"><?php _e('IN NEED OF INSPIRATION?') ?></div>
         <p class="centered">
             <?php _ehtml('Short stories introducing digital social innovations which we love') ?>
         </p>
@@ -205,6 +135,49 @@ if (!isset($urlHandler))
                 <div class="login-li menu-li"><?php _ehtml('See all case studies') ?></div>
                 <img class="login-arrow" src="<?php echo SITE_RELATIVE_PATH ?>/images/ios7-arrow-thin-right.png">
             </a>
+        </div>
+    </div>
+</div>
+
+<div class="top-3">
+    <div class="w-row">
+    <!--    <div class="top-3-col w-col w-col-4" data-ix="fadeinuponload-12">
+            <div class="top-3-link" data-ix="underline">
+                <h3 class="top3-h3"><?php _e('FUNDING') ?></h3>
+                <div class="top3-underline" data-ix="new-interaction-2"></div>
+                <p class="top-3-p"><?php _e('Use our funding directory to find opportunities for your project') ?></p>
+                <a class="log-in-link read-more w-clearfix w-inline-block" data-ix="log-in-arrow"
+                   href="<?php echo $urlHandler->funding() ?>">
+                    <div class="login-li menu-li readmore-li"><?php _ehtml('Read more') ?></div>
+                    <img class="login-arrow" src="<?php echo SITE_RELATIVE_PATH ?>/images/ios7-arrow-thin-right.png">
+                </a>
+            </div>
+        </div>
+        <div class="top-3-col w-col w-col-4" data-ix="fadeinuponload-13">
+            <div class="top-3-link" data-ix="underline">
+                <h3 class="top3-h3"><?php _ehtml('Events') ?></h3>
+                <div class="top3-underline" data-ix="new-interaction-2"></div>
+                <p class="top-3-p"><?php _e('Explore DSI events happening around Europe') ?></p>
+                <a class="log-in-link read-more w-clearfix w-inline-block" data-ix="log-in-arrow"
+                   href="<?php echo $urlHandler->events() ?>">
+                    <div class="login-li menu-li readmore-li"><?php _ehtml('Read more') ?></div>
+                    <img class="login-arrow" src="<?php echo SITE_RELATIVE_PATH ?>/images/ios7-arrow-thin-right.png">
+                </a>
+            </div>
+        </div> -->
+        <div class="top-3-col w-col w-col-4" data-ix="fadeinuponload-14">
+            <div class="top-3-link" data-ix="underline">
+                <h3 class="top3-h3"><?php _ehtml('News & blogs') ?></h3>
+                <div class="top3-underline" data-ix="new-interaction-2"></div>
+                <p class="top-3-p">
+                    <?php _e('Our blog features stories of the people and projects pioneering digital social innovation') ?>
+                </p>
+                <a class="log-in-link read-more w-clearfix w-inline-block" data-ix="log-in-arrow"
+                   href="<?php echo $urlHandler->blogPosts() ?>">
+                    <div class="login-li menu-li readmore-li"><?php _ehtml('Read more') ?></div>
+                    <img class="login-arrow" src="<?php echo SITE_RELATIVE_PATH ?>/images/ios7-arrow-thin-right.png">
+                </a>
+            </div>
         </div>
     </div>
 </div>

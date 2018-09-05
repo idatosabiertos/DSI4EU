@@ -94,7 +94,7 @@ require __DIR__ . '/header.php'
                             Cities and urban development (led by Barcelona Activa).</a>
                 </ul>
                 <p>
-                    Get in touch with <a href="mailto:contact@digitalsocial.eu">contact@digitalsocial.eu</a> if you’d
+                    Get in touch with <a href="mailto:contacto@idatosabiertos.org">contacto@idatosabiertos.org</a> if you’d
                     like to speak to any of the cluster leads.
                 </p>
                 <h2>
@@ -144,7 +144,7 @@ require __DIR__ . '/header.php'
                         project on the digitalsocial.eu website, you'll make yourself more visible to citizens,
                         commissioners, funders and new contacts. We want the platform to be the most comprehensive
                         directory of digital social innovation in Europe, and we need your help to get there.
-                    <li><a href="mailto:contact@digitalsocial.eu">Drop us an email</a>. We are always keen to speak to
+                    <li><a href="mailto:contacto@idatosabiertos.org">Drop us an email</a>. We are always keen to speak to
                         people working on DSI, to explore potential collaborations, to help share your work, to speak at
                         and attend events, or just to exchange experiences and lessons.
                     <li><b>Follow us on <a href="http://twitter.com/DSI4EU">Twitter</a> and
@@ -166,7 +166,7 @@ require __DIR__ . '/header.php'
                     blogs and open publication of our project deliverables.
                 </p>
                 <p>
-                    Please <a href="mailto:contact@digitalsocial.eu">get in touch</a> if you have any further questions
+                    Please <a href="mailto:contacto@idatosabiertos.org">get in touch</a> if you have any further questions
                     about the project.
                 </p>
                 <p>

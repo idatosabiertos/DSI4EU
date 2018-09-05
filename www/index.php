@@ -283,16 +283,10 @@ class Router
             $this->staticPage($matches, 'updates.php');
 
         } elseif (preg_match('<^/' . $langHandler . 'about-the-project$>', $this->pageURL, $matches)) {
-            if (Translate::getCurrentLang() === 'en')
-                $this->staticPage($matches, 'about-the-project_en.php');
-            else
-                $this->staticPage($matches, 'about-the-project.php');
+            $this->staticPage($matches, 'about-the-project.php');
 
         } elseif (preg_match('<^/' . $langHandler . 'partners$>', $this->pageURL, $matches)) {
-            if (Translate::getCurrentLang() === 'en')
-                $this->staticPage($matches, 'partners_en.php');
-            else
-                $this->staticPage($matches, 'partners.php');
+            $this->staticPage($matches, 'partners.php');
 
         } elseif (preg_match('<^/' . $langHandler . 'open-data-research-and-resources$>', $this->pageURL, $matches)) {
             $this->staticPage($matches, 'open-data-research-and-resources.php');

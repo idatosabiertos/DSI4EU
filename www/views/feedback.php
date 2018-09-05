@@ -4,11 +4,7 @@
         <div class="feed-back-collection">
             <h1 class="feedback-h1"><?php _ehtml('DSI4EU Feedback form')?></h1>
             <br/><br/>
-            <p class="feed-back-info">Digitalsocial.eu is a work in progress. We are keen to gather feedback from our
-                users. Please let us
-                know about anything you find on the site that doesn't work as you expect and any ideas you have on how
-                the site could be improved.</p>
-            <div class="w-form feedback-form-wrapper">
+            <div class="w-form feedback-form-wrapper" style="margin:0 auto;">
                 <form class="w-clearfix" ng-submit="sendFeedbackSubmit()">
                     <input type="text" placeholder="<?php _ehtml('Your name')?>" class="w-input feedback-form-input"
                            ng-model="feedback.name">

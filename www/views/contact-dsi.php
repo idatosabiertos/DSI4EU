@@ -17,9 +17,6 @@ require __DIR__ . '/header.php';
                         '<a href="' . $urlHandler->feedback() . '">' . _html('feedback form') . '</a>'
                     ) ?>
                 </p>
-                <p>
-                    <?php _e('To keep in touch with the project and DSI in Europe, follow us on Twitter @DSI4EU and sign up to our newsletter.') ?>
-                </p>
             </div>
             <?php require __DIR__ . '/partialViews/about-dsi.php' ?>
         </div>

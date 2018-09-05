@@ -17,7 +17,7 @@ use DSI\Service\URL;
 
     <div class="form-container" ng-hide="forgotPassword.show">
         <a href="<?php echo $urlHandler->home() ?>">
-            <img class="log-in-logo" src="<?php echo SITE_RELATIVE_PATH ?>/images/dark_1.svg">
+            <img class="log-in-logo" src="<?php echo SITE_RELATIVE_PATH ?>/images/dark.png">
         </a>
         <?php if (isset($_GET['from']) AND $_GET['from'] == 'organisation') { ?>
             <h2><?php _ehtml('You must be logged in to add an organisation') ?></h2>
@@ -63,7 +63,7 @@ use DSI\Service\URL;
     </div>
 
     <div class="form-container" ng-show="forgotPassword.show" ng-cloak="">
-        <img class="log-in-logo" src="<?php echo SITE_RELATIVE_PATH ?>/images/dark_1.svg">
+        <img class="log-in-logo" src="<?php echo SITE_RELATIVE_PATH ?>/images/dark.png">
         <h2><?php _ehtml('Reset your password') ?></h2>
 
         <div class="form-wrapper w-form">

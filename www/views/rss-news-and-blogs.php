@@ -4,7 +4,7 @@
 ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
-        <title>Digital Social Innovation :: News and Blogs</title>
+        <title>EXPLORA LATAM :: News and Blogs</title>
         <link><?php echo $urlHandler->fullUrl($urlHandler->rssNewsBlogs()) ?></link>
         <description>Recent news and blog posts on Digital Social Innovation</description>
         <generator>PHP</generator>

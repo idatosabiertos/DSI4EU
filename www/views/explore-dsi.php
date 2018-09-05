@@ -1,5 +1,5 @@
 <?php
-$pageTitle = 'Explore DSI';
+$pageTitle = 'EXPLORA LATAM';
 require __DIR__ . '/header.php';
 
 $totalProjects = (new \DSI\Repository\ProjectRepoInAPC())->countAll();

@@ -4,7 +4,7 @@
 ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
-        <title>Digital Social Innovation :: Funding Opportunities</title>
+        <title>EXPLORA LATAM :: Funding Opportunities</title>
         <link><?php echo $urlHandler->fullUrl($urlHandler->rssFundingOpportunities()) ?></link>
         <description>Recent Funding Opportunities on Digital Social Innovation</description>
         <generator>PHP</generator>

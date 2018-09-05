@@ -8958,9 +8958,9 @@ strong {
 
 .stats-bg {
   height: 500px;
-  background-color: #18233f;
+  background-color: #c6c6c6;
   background-image: -webkit-radial-gradient(circle farthest-corner at 50% 50%, rgba(13, 26, 54, .72), #11151f);
-  background-image: radial-gradient(circle farthest-corner at 50% 50%, rgba(13, 26, 54, .72), #11151f);
+  background-image: radial-gradient(circle farthest-corner at 50% 50%, rgb(126, 126, 126), #d4d4d4);
   background-position: 0px 0px;
   background-size: auto;
   background-repeat: repeat;

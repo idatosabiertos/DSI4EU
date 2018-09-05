@@ -356,7 +356,7 @@ if (!isset($urlHandler))
         <div class="content">
             <table bgcolor="#eee">
                 <tr>
-                    <td style="width:150px"><img src="https://digitalsocial.eu/images/dark.svg"/></td>
+                    <td style="width:150px"><img src="https://ds.idatosabiertos.org/images/dark.png"/></td>
                     <td align="right"><h6 class="collapse" style="color:#000;"><?php echo $mailHeader ?></h6>
                     </td>
                 </tr>
