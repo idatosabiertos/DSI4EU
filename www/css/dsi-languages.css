@@ -8193,9 +8193,15 @@ strong {
   color: #fff;
   font-size: 88px;
   line-height: 82px;
-  font-weight: 700;
+  font-weight: 900;
   text-transform: uppercase;
+      letter-spacing: 3px;
 }
+
+.home-hero-h1 span{
+	    letter-spacing: -1px;
+}
+
 
 .home-hero-h3 {
   max-width: 520px;
