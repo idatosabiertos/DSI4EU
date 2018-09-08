@@ -46,7 +46,7 @@ if (!isset($urlHandler))
 
 <div class="stats-bg">
     <div class="content">
-        <h2 class="centered h2-large" data-ix="fadeinuponload-2">
+        <h2 class="centered h2-large" data-ix="fadeinuponload-2" style="margin-top:0;">
             <?php _e("Who is opening Latin America?") ?>
         </h2>
 

@@ -78,7 +78,7 @@ require __DIR__ . '/header.php' ?>
                         </a>
                     </div>
                 </div>
-                <h3><?php _ehtml('ILDA is part of the Open Data for Development') ?></h3>
+                <p><?php _ehtml('ILDA is part of the Open Data for Development') ?></p>
                 <div class="w-row">
                     <div class="w-col w-col-6">
                         <img style="height: 60px;margin: auto; display: block;" src="<?php echo SITE_RELATIVE_PATH ?>/images/partners/idrc.png">

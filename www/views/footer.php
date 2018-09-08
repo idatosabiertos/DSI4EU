@@ -143,10 +143,9 @@ if (!isset($urlHandler))
                         </a>
                     </div>
                     <div class="footer-logo-col w-clearfix w-col w-col-3">
-                       <a class="footer-partner-link w-inline-block" href="http://od4d.net/"
-                                   target="_blank">
-                            <img class="footer-partner-logo" style="height:50px;width:auto"
-                                         src="<?php echo SITE_RELATIVE_PATH ?>/images/partners/op4d.png">
+                        <a class="footer-partner-link w-inline-block" href="https://altec.lat/" target="_blank">
+                                <img class="footer-partner-logo" style="height:30px;width:auto"
+                                     src="<?php echo SITE_RELATIVE_PATH ?>/images/partners/altec.png">
                         </a>
                     </div>
                     <div class="footer-logo-col w-clearfix w-col w-col-3">
@@ -156,9 +155,10 @@ if (!isset($urlHandler))
                         </a>
                     </div>
                     <div class="footer-logo-col w-clearfix w-col w-col-3">
-                        <a class="footer-partner-link w-inline-block" href="https://altec.lat/" target="_blank">
-                                <img class="footer-partner-logo" style="height:30px;width:auto"
-                                     src="<?php echo SITE_RELATIVE_PATH ?>/images/partners/altec.png">
+                       <a class="footer-partner-link w-inline-block" href="http://od4d.net/"
+                                   target="_blank">
+                            <img class="footer-partner-logo" style="height:50px;width:auto"
+                                         src="<?php echo SITE_RELATIVE_PATH ?>/images/partners/op4d.png">
                         </a>
                     </div>
                 </div>

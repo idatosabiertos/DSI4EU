@@ -181,13 +181,13 @@ if (!isset($urlHandler))
                     <p>
                         <?php echo show_input($organisation->getName()) ?>
                         <?php if ($organisation->getCountry()) { ?>
-                            is based in <?php echo $organisation->getCountryName() ?>
+                            <?php _ehtml('is based in') ?> <?php echo $organisation->getCountryName() ?>
                         <?php } ?>
                         <?php if ($organisation->getCountry() AND $organisation->getStartDate()) { ?>
-                            and
+                            <?php _ehtml('and') ?>
                         <?php } ?>
                         <?php if ($organisation->getStartDate()) { ?>
-                            has been running since <?php echo date('M Y', $organisation->getUnixStartDate()) ?>
+                            <?php _ehtml('has been running since') ?> <?php echo date('M Y', $organisation->getUnixStartDate()) ?>
                         <?php } ?>
                     </p>
                     <?php if ($organisation->getExternalUrl()) { ?>

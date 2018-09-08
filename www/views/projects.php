@@ -25,9 +25,6 @@ $showAdvancedSearch = (
             <div class="w-row">
                 <div class="w-col w-col-8 w-col-stack">
                     <h1 class="content-h1"><?php _ehtml('Projects') ?></h1>
-                    <p class="intro">
-                        <?php _ehtml('Digital social innovation (DSI) covers a range of areas, from providing tools to improve democratic processes to [...]') ?>
-                    </p>
                     <p class="header-intro-descr">
                         <?php _ehtml('Here you can look through projects which digital social innovators across Europe have submitted to the website. [...]') ?>
                         <strong><?php _ehtml('Open hardware') ?></strong>,
