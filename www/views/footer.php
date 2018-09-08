@@ -124,6 +124,12 @@ if (!isset($urlHandler))
             <div class="w-col w-col-6">
                 <div class="w-row">
                     <div class="footer-logo-col w-clearfix w-col w-col-3">
+                        <a class="footer-partner-link w-inline-block" href="https://www.idatosabiertos.org/" target="_blank">
+                            <img class="footer-partner-logo" style="height:38px;width:auto"
+                                 src="<?php echo SITE_RELATIVE_PATH ?>/images/partners/ilda.png">
+                        </a>
+                    </div>
+                    <div class="footer-logo-col w-clearfix w-col w-col-3">
                         <a class="footer-partner-link w-inline-block" href="https://www.iadb.org/" target="_blank">
                             <img class="footer-partner-logo" style="height:38px;width:auto"
                                  src="<?php echo SITE_RELATIVE_PATH ?>/images/partners/bid.png">

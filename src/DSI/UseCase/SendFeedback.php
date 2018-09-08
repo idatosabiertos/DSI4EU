@@ -66,7 +66,7 @@ class SendFeedback
             $email = new Mailer();
             $email->From = 'noreply@digitalsocial.eu';
             $email->FromName = 'Digital Social';
-            $email->addAddress('matt.stokes@nesta.org.uk');
+            $email->addAddress('contacto@idatosabiertos.org');
             $email->Subject = 'Digital Social Innovation :: Feedback Form';
             $email->wrapMessageInTemplate([
                 'header' => 'Feedback Form',

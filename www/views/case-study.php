@@ -44,7 +44,7 @@ require __DIR__ . '/header.php';
                 </a>
 
                 <?php if ($caseStudy->getProject() OR $caseStudy->getOrganisation()) { ?>
-                    <h3 class="cse side-bar-h3"><?php echo show_input($caseStudy->getTitle()) ?> on DSI</h3>
+                    <h3 class="cse side-bar-h3"><?php echo show_input($caseStudy->getTitle()) ?></h3>
 
                     <?php if ($project = $caseStudy->getProject()) { ?>
                         <p><?php echo show_input($project->getShortDescription()) ?></p>
