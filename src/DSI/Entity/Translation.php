@@ -14,7 +14,7 @@ class Translation
         'es',
         'ca'
     ];
-    const DEFAULT_LANGUAGE = 'es';
+    const DEFAULT_LANGUAGE = 'en';
 
     /** @var string */
     private $index,
