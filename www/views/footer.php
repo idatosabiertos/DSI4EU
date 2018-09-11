@@ -16,7 +16,7 @@ if (!isset($urlHandler))
     <div class="twitter">
         <div class="w-row">
             <div class="w-col w-col-1 w-col-small-1 w-col-tiny-tiny-stack">
-                <img class="homepage-twitter-logo" src="https://ds.idatosabiertos.org/images/twitter-logo-silhouette.png">
+                <img class="homepage-twitter-logo" src="https://exploralat.am/images/twitter-logo-silhouette.png">
             </div>
             <div class="w-col w-col-11 w-col-small-11 w-col-tiny-tiny-stack">
                 <p class="twitter-text">

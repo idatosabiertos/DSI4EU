@@ -9,6 +9,6 @@ class DataVis
         if (in_array(App::getEnv(), [APP::DEV, APP::TEST]))
             return 'http://dsitest.todo.to.it/viz/';
         else
-            return 'http://dsmap.idatosabiertos.org/';
+            return 'http://map.exploralat.am/';
     }
 }

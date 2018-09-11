@@ -96,7 +96,7 @@ if (!isset($urlHandler))
     </div>
 
     <div class="signn" style="margin-top:50px;">
-        <a class="large log-in-link sign-up w-clearfix w-inline-block" data-ix="log-in-arrow" href="http://dsmap.idatosabiertos.org/">
+        <a class="large log-in-link sign-up w-clearfix w-inline-block" data-ix="log-in-arrow" href="http://map.exploralat.am/">
             <div class="data-button login-li menu-li"><?php _e('EXPLORE EUROPE’S GROWING NETWORK OF DIGITAL SOCIAL INNOVATION') ?></div>
             <img class="login-arrow" src="<?= SITE_RELATIVE_PATH ?>/images/ios7-arrow-thin-right.png">
         </a>

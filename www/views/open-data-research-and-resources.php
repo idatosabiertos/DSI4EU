@@ -15,14 +15,14 @@ require __DIR__ . '/header.php';
                     <?php _ehtml('Access all the anonymised data we have captured on DSI in Europe via the DSI4EU open data set.') ?>
                 </p>
                 <p><strong><?php _ehtml('Projects data:') ?></strong>
-                    <a href="https://ds.idatosabiertos.org/export/projects.json">json</a>,
-                    <a href="https://ds.idatosabiertos.org/export/projects.csv">csv</a>,
-                    <a href="https://ds.idatosabiertos.org/export/projects.xml">xml</a>
+                    <a href="https://exploralat.am/export/projects.json">json</a>,
+                    <a href="https://exploralat.am/export/projects.csv">csv</a>,
+                    <a href="https://exploralat.am/export/projects.xml">xml</a>
                 </p>
                 <p><strong><?php _ehtml('Organisations data:') ?></strong>
-                    <a href="https://ds.idatosabiertos.org/export/organisations.json">json</a>,
-                    <a href="https://ds.idatosabiertos.org/export/organisations.csv">csv</a>,
-                    <a href="https://ds.idatosabiertos.org/export/organisations.xml">xml</a>
+                    <a href="https://exploralat.am/export/organisations.json">json</a>,
+                    <a href="https://exploralat.am/export/organisations.csv">csv</a>,
+                    <a href="https://exploralat.am/export/organisations.xml">xml</a>
                 </p>
             </li>
             <li>
