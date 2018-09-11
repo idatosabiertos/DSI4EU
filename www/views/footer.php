@@ -132,14 +132,14 @@ if (!isset($urlHandler))
                     <div class="footer-logo-col w-clearfix w-col w-col-3">
                         <a class="footer-partner-link w-inline-block" href="https://www.iadb.org/" target="_blank">
                             <img class="footer-partner-logo" style="height:38px;width:auto"
-                                 src="<?php echo SITE_RELATIVE_PATH ?>/images/partners/bid.png">
+                                 src="<?php echo SITE_RELATIVE_PATH ?>/images/partners/bid-white.png">
                         </a>
                     </div>
                     <div class="footer-logo-col w-clearfix w-col w-col-3">
                         <a class="footer-partner-link w-inline-block" href="http://www.avina.net/avina/"
                            target="_blank">
                             <img class="footer-partner-logo" style="height:38px;width:auto"
-                                 src="<?php echo SITE_RELATIVE_PATH ?>/images/partners/avina.jpg">
+                                 src="<?php echo SITE_RELATIVE_PATH ?>/images/partners/avina-white.png">
                         </a>
                     </div>
                     <div class="footer-logo-col w-clearfix w-col w-col-3">
@@ -150,7 +150,7 @@ if (!isset($urlHandler))
                     </div>
                     <div class="footer-logo-col w-clearfix w-col w-col-3">
                         <a class="footer-partner-link w-inline-block" href="https://altec.lat/" target="_blank">
-                                <img class="footer-partner-logo" style="height:30px;width:auto"
+                                <img class="footer-partner-logo" style="height:25px;width:auto"
                                      src="<?php echo SITE_RELATIVE_PATH ?>/images/partners/altec.png">
                         </a>
                     </div>
