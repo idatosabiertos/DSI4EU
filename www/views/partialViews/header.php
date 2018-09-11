@@ -195,8 +195,8 @@ if (!isset($urlHandler))
                     <div class="create-drop-down-block language-selctor">
                         <a class="drop-down-link-li" href="<?php echo (new URL('ca'))->home() ?>">Català</a>
                         <a class="drop-down-link-li" href="<?php echo (new URL('de'))->home() ?>">Deutsch</a>
-                        <a class="drop-down-link-li" href="<?php echo (new URL('en'))->home() ?>">English</a>
-                        <a class="drop-down-link-li" href="<?php echo (new URL('es'))->home() ?>">Español</a>
+                        <a class="drop-down-link-li" href="/en">English</a>
+                        <a class="drop-down-link-li" href="/">Español</a>
                         <a class="drop-down-link-li" href="<?php echo (new URL('fr'))->home() ?>">Français</a>
                         <a class="drop-down-link-li" href="<?php echo (new URL('it'))->home() ?>">Italiano</a>
                     </div>
