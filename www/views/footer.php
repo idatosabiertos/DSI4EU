@@ -125,7 +125,7 @@ if (!isset($urlHandler))
                 <div class="w-row">
                     <div class="footer-logo-col w-clearfix w-col w-col-3">
                         <a class="footer-partner-link w-inline-block" href="https://www.idatosabiertos.org/" target="_blank">
-                            <img class="footer-partner-logo" style="height:38px;width:auto"
+                            <img class="footer-partner-logo" style="height:36px;width:auto"
                                  src="<?php echo SITE_RELATIVE_PATH ?>/images/partners/ilda.png">
                         </a>
                     </div>
@@ -150,7 +150,7 @@ if (!isset($urlHandler))
                     </div>
                     <div class="footer-logo-col w-clearfix w-col w-col-3">
                         <a class="footer-partner-link w-inline-block" href="https://altec.lat/" target="_blank">
-                                <img class="footer-partner-logo" style="height:25px;width:auto"
+                                <img class="footer-partner-logo" style="height:17px;width:auto; margin-bottom: 10px;"
                                      src="<?php echo SITE_RELATIVE_PATH ?>/images/partners/altec.png">
                         </a>
                     </div>

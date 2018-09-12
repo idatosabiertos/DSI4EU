@@ -8932,8 +8932,8 @@ strong {
 }
 
 .footer-partner-logo {
-  width: 131px;
-  margin-top: 15px;
+  margin: 0 auto;
+  display: block;
 }
 
 .footer-partner-logo.nesta {
