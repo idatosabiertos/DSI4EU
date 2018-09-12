@@ -89,10 +89,14 @@ if (!isset($urlHandler))
 <div class="w-row">
     <div class="carousel" style="margin-top:20px;"
       data-flickity='{ "wrapAround": true}'>
-      <img src="<?php echo SITE_RELATIVE_PATH ?>/images/map-placeholders/Carousell-01-01.png" alt="" />
-      <img src="<?php echo SITE_RELATIVE_PATH ?>/images/map-placeholders/Carousell-01-02.png" alt="" />
-      <img src="<?php echo SITE_RELATIVE_PATH ?>/images/map-placeholders/Carousell-01-03.png" alt="" />
-      <img src="<?php echo SITE_RELATIVE_PATH ?>/images/map-placeholders/Carousell-01-04.png" alt="" />
+
+            <img src="<?php echo SITE_RELATIVE_PATH ?>/images/map-placeholders/Carousell-01-01.png" alt="" />
+
+            <img src="<?php echo SITE_RELATIVE_PATH ?>/images/map-placeholders/Carousell-01-02.png" alt="" />
+
+            <img src="<?php echo SITE_RELATIVE_PATH ?>/images/map-placeholders/Carousell-01-03.png" alt="" />
+
+            <img src="<?php echo SITE_RELATIVE_PATH ?>/images/map-placeholders/Carousell-01-04.png" alt="" />
     </div>
 
     <div class="signn" style="margin-top:50px;">
