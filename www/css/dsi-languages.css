@@ -8871,8 +8871,8 @@ strong {
 
 .case-study-ind {
   width: 100%;
-  height: 567px;
-  margin-bottom: 20px;
+/*  height: 567px;
+*/  margin-bottom: 20px;
   padding-right: 10px;
   padding-left: 10px;
   text-decoration: none;
@@ -8910,6 +8910,7 @@ strong {
 
 .case-study-img-container {
   overflow: hidden;
+      height: 183px;
 }
 
 .cradp {
