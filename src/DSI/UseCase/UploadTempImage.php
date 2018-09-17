@@ -54,6 +54,7 @@ class UploadTempImage
 
         $this->imagePath = md5($this->data()->fileName . uniqid('', true)) . '.' . strtolower($fileInfo->getExtension());
         rename($this->data()->filePath, Image::TEMP_FOLDER . $this->imagePath);
+        chmod(Image::TEMP_FOLDER . $this->imagePath, 0777);
     }
 
     /**
