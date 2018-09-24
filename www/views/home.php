@@ -87,7 +87,7 @@ if (!isset($urlHandler))
 </div>
 
 <div class="w-row">
-    <div class="carousel" style="margin-top:20px;"
+    <!-- div class="carousel" style="margin-top:20px;"
       data-flickity='{ "wrapAround": true}'>
 
             <img src="<?php echo SITE_RELATIVE_PATH ?>/images/map-placeholders/Carousell-01-01.png" alt="" />
@@ -97,7 +97,7 @@ if (!isset($urlHandler))
             <img src="<?php echo SITE_RELATIVE_PATH ?>/images/map-placeholders/Carousell-01-03.png" alt="" />
 
             <img src="<?php echo SITE_RELATIVE_PATH ?>/images/map-placeholders/Carousell-01-04.png" alt="" />
-    </div>
+    </div -->
 
     <div class="signn" style="margin-top:50px;">
         <a class="large log-in-link sign-up w-clearfix w-inline-block" data-ix="log-in-arrow" href="http://map.exploralat.am/">
