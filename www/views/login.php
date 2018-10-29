@@ -129,19 +129,13 @@ use DSI\Service\URL;
 
     <div class="or-login-with">- <?php _ehtml('or log in with') ?> -</div>
     <div class="w-row">
-        <div class="w-col w-col-4 w-col-small-4 w-col-tiny-6">
+        <div class="w-col w-col-6 w-col-small-6 w-col-tiny-6">
             <a class="log-in-with-link w-inline-block" href="<?php echo URL::loginWithFacebook() ?>">
                 <img class="login-with-img" src="<?php echo SITE_RELATIVE_PATH ?>/images/facebook-2.png" width="25">
                 <div class="log-in-with-text">Facebook</div>
             </a>
         </div>
-        <div class="w-col w-col-3 w-col-small-4 w-col-tiny-6">
-            <a class="log-in-with-link w-inline-block" href="<?php echo URL::loginWithGoogle() ?>">
-                <img class="login-with-img" src="<?php echo SITE_RELATIVE_PATH ?>/images/google-plus.png" width="25">
-                <div class="log-in-with-text">Google +</div>
-            </a>
-        </div>
-        <div class="w-col w-col-4 w-col-small-4 w-col-tiny-6">
+        <div class="w-col w-col-6 w-col-small-6 w-col-tiny-6">
             <a class="log-in-with-link w-inline-block" href="<?php echo URL::loginWithGitHub() ?>">
                 <img class="login-with-img" src="<?php echo SITE_RELATIVE_PATH ?>/images/github.png" width="25">
                 <div class="log-in-with-text">GitHub</div>
