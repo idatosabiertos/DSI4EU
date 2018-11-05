@@ -48,16 +48,23 @@ use DSI\Service\URL;
                 </label>
 
                 <button type="submit" class="auto ll log-in-link w-clearfix w-inline-block" data-ix="log-in-arrow"
-                        style="display:block;width:auto">
+                        style="display:block;width:100%">
                     <span class="login-li menu-li"
                           ng-bind="loading ? '<?php _ehtml('Login') ?>...' : '<?php _ehtml('Login') ?>'"></span>
                     <img class="login-arrow" src="<?php echo SITE_RELATIVE_PATH ?>/images/ios7-arrow-thin-right.png">
                 </button>
-                <a class="log-in-link-note" href="#" style="font-size:11px"
-                   ng-click="forgotPassword.show = true"><?php _ehtml('Forgot password') ?></a>
-                <a class="log-in-link-note second" style="font-size:11px"
-                   href="<?php echo $urlHandler->register() ?>"><?php _ehtml("Don't have an account?") ?>
-                </a>
+
+                <div class="w-row">
+                    <div class="w-col w-col-6 w-col-small-6 w-col-tiny-6">
+                        <a href="#" style="font-size:11px"
+                           ng-click="forgotPassword.show = true"><?php _ehtml('Forgot password') ?></a>
+                    </div>
+                    <div class="w-col w-col-6 w-col-small-6 w-col-tiny-6">
+                        <a style="font-size:11px"
+                           href="<?php echo $urlHandler->register() ?>"><?php _ehtml("Don't have an account?") ?>
+                        </a>
+                    </div>
+                </div>
             </form>
         </div>
     </div>
@@ -115,13 +122,15 @@ use DSI\Service\URL;
                 </div>
 
                 <button type="submit" class="auto ll log-in-link w-clearfix w-inline-block" data-ix="log-in-arrow"
-                        ng-disabled="forgotPassword.loading" style="width:300px;display:block">
+                        ng-disabled="forgotPassword.loading" style="width:100%;display:block">
                     <span class="login-li menu-li"
                           ng-bind="forgotPassword.loading ? '<?php _ehtml('Loading...') ?>' : '<?php _ehtml('Reset my password') ?>'"></span>
                     <img class="login-arrow" src="<?php echo SITE_RELATIVE_PATH ?>/images/ios7-arrow-thin-right.png">
                 </button>
-                <a class="log-in-link-note" href="#"
+
+                <a class="log-in-link-note" href="#" style="font-size:11px"
                    ng-click="forgotPassword.show = false"><?php _ehtml('Back to login') ?></a>
+
             </form>
         </div>
     </div>
