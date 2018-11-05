@@ -113,31 +113,6 @@ require __DIR__ . '/header.php';
                         <?php
                         $socialShare = new \DSI\Service\SocialShare('https://' . SITE_DOMAIN . SITE_RELATIVE_PATH . $urlHandler->project($project));
                         $socialShare->renderHtml();
-
-                        $sinceLastUpdate = $project->getSinceLastUpdate();
-                        if ($sinceLastUpdate['years'] == 1)
-                            _ehtml("This project was last updated 1 year ago");
-                        elseif ($sinceLastUpdate['years'] > 1)
-                            echo show_input(sprintf(
-                                _html("This project was last updated %s years ago"),
-                                $sinceLastUpdate['years']
-                            ));
-                        elseif ($sinceLastUpdate['months'] == 1)
-                            _ehtml("This project was last updated 1 month ago");
-                        elseif ($sinceLastUpdate['months'] > 1)
-                            echo show_input(sprintf(
-                                _html("This project was last updated %s months ago"),
-                                $sinceLastUpdate['months']
-                            ));
-                        elseif ($sinceLastUpdate['days'] == 1)
-                            _ehtml("This project was last updated yesterday");
-                        elseif ($sinceLastUpdate['days'] > 1)
-                            echo show_input(sprintf(
-                                _html("This project was last updated %s days ago"),
-                                $sinceLastUpdate['days']
-                            ));
-                        else
-                            _ehtml("This project was last updated today");
                         ?>
                     </div>
                 </div>

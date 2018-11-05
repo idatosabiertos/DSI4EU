@@ -9285,8 +9285,9 @@ height: 186px;
 
 .search-mag {
   position: absolute;
+  right: -6px;
+  padding: 2px;
   top: 5px;
-  right: 0px;
   width: 30px;
 }
 
