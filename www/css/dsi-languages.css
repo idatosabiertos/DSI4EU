@@ -9091,9 +9091,13 @@ height: 186px;
   text-align: center;
 }
 
+[placeholder]{
+  text-overflow:ellipsis;
+}
+
 .main-search {
   display: block;
-  width: 460px;
+  width: 530px;
   margin-top: 50px;
   margin-right: auto;
   margin-left: auto;
@@ -12266,7 +12270,7 @@ html.w-mod-js *[data-ix="map-point-expand-3"] {
     width: auto;
   }
   .main-search {
-    width: 80%;
+    width: 95%;
   }
   .main-menu {
     overflow: scroll;
