@@ -78,35 +78,40 @@ require __DIR__ . '/header.php';
 
                     <div class="involved">
                         <h3 class="descr-h3 space"><?php _ehtml("Who's involved") ?></h3>
-                        <h4 class="involved-h4"><?php _ehtml('People') ?></h4>
-                        <?php foreach ($projectMembers AS $projectMember) {
-                            $member = $projectMember->getMember();
-                            if (trim($member->getFullName()) == '') continue; ?>
-                            <a class="involved-card w-inline-block"
-                               href="<?php echo $urlHandler->profile($member) ?>">
-                                <div class="involved-card">
-                                    <div class="w-row">
-                                        <div class="image-col w-col w-col-3 w-col-small-3 w-col-tiny-3">
-                                            <img src="<?php echo \DSI\Entity\Image::PROFILE_PIC_URL . $member->getProfilePicOrDefault() ?>"
-                                                 class="involved-profile-img" width="50">
-                                        </div>
-                                        <div class="w-clearfix w-col w-col-9 w-col-small-9 w-col-tiny-9">
-                                            <div class="card-name">
-                                                <?php echo show_input($member->getFullName()) ?>
+                        <?php if ($projectMembers) { ?>
+                            <h4 class="involved-h4"><?php _ehtml('People') ?></h4>
+                            <?php foreach ($projectMembers AS $projectMember) {
+                                $member = $projectMember->getMember();
+                                if (trim($member->getFullName()) == '') continue; ?>
+                                <a class="involved-card w-inline-block"
+                                   href="<?php echo $urlHandler->profile($member) ?>">
+                                    <div class="involved-card">
+                                        <div class="w-row">
+                                            <div class="image-col w-col w-col-3 w-col-small-3 w-col-tiny-3">
+                                                <img src="<?php echo \DSI\Entity\Image::PROFILE_PIC_URL . $member->getProfilePicOrDefault() ?>"
+                                                     class="involved-profile-img" width="50">
                                             </div>
-                                            <div class="card-position">
-                                                <?php echo show_input($member->getJobTitle()) ?>
+                                            <div class="w-clearfix w-col w-col-9 w-col-small-9 w-col-tiny-9">
+                                                <div class="card-name">
+                                                    <?php echo show_input($member->getFullName()) ?>
+                                                </div>
+                                                <div class="card-position">
+                                                    <?php echo show_input($member->getJobTitle()) ?>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
-                                </div>
-                            </a>
+                                </a>
+                            <?php } ?>
                         <?php } ?>
-                        <h4 class="involved-h4 orgs-h"><?php _ehtml('Organisations') ?></h4>
-                        <?php foreach ($organisationProjectsObj AS $organisationProject) {
-                            $organisation = $organisationProject->getOrganisation(); ?>
-                            <a class="sidebar-link" href="<?php echo $urlHandler->organisation($organisation) ?>">
-                                <span class="green">-&nbsp;</span><?php echo show_input($organisation->getName()) ?></a>
+
+                        <?php if ($organisationProjectsObj) { ?>
+                            <h4 class="involved-h4 orgs-h"><?php _ehtml('Organisations') ?></h4>
+                            <?php foreach ($organisationProjectsObj AS $organisationProject) {
+                                $organisation = $organisationProject->getOrganisation(); ?>
+                                <a class="sidebar-link" href="<?php echo $urlHandler->organisation($organisation) ?>">
+                                    <span class="green">-&nbsp;</span><?php echo show_input($organisation->getName()) ?></a>
+                            <?php } ?>
                         <?php } ?>
 
                         <br/>

@@ -80,29 +80,36 @@ if (!isset($urlHandler))
                         </h3>
                         <div class="w-row">
                             <div class="w-col w-col-6">
-                                <h4 class="involved-h4 orgs-h"><?php _ehtml('Projects') ?></h4>
-                                <?php foreach ($organisationProjects AS $organisationProject) { ?>
-                                    <?php $project = $organisationProject->getProject() ?>
-                                    <a class="sidebar-link" href="<?php echo $urlHandler->project($project) ?>">
-                                        <span class="green">- </span>
-                                        <?php echo show_input($project->getName()) ?>
-                                    </a>
+                                <?php if ($organisationProjects) { ?>
+                                    <h4 class="involved-h4 orgs-h"><?php _ehtml('Projects') ?></h4>
+                                    <?php foreach ($organisationProjects AS $organisationProject) { ?>
+                                        <?php $project = $organisationProject->getProject() ?>
+                                        <a class="sidebar-link" href="<?php echo $urlHandler->project($project) ?>">
+                                            <span class="green">- </span>
+                                            <?php echo show_input($project->getName()) ?>
+                                        </a>
+                                    <?php } ?>
                                 <?php } ?>
 
-                                <h4 class="involved-h4 orgs-h"><?php _ehtml('Members') ?></h4>
-                                <?php foreach ($organisationMembers AS $member) { ?>
-                                    <a class="sidebar-link" href="<?php echo $urlHandler->profile($member) ?>">
-                                        <span class="green">- </span>
-                                        <?php echo show_input($member->getFullName()) ?>
-                                    </a>
+                                <?php if ($organisationMembers) { ?>
+                                    <h4 class="involved-h4 orgs-h"><?php _ehtml('Members') ?></h4>
+                                    <?php foreach ($organisationMembers AS $member) { ?>
+                                        <a class="sidebar-link" href="<?php echo $urlHandler->profile($member) ?>">
+                                            <span class="green">- </span>
+                                            <?php echo show_input($member->getFullName()) ?>
+                                        </a>
+                                    <?php } ?>
                                 <?php } ?>
+
                             </div>
                             <div class="w-col w-col-6">
-                                <h4 class="involved-h4 orgs-h"><?php _ehtml('Organisations') ?></h4>
-                                <?php foreach ($partnerOrganisations AS $org) { ?>
-                                    <a class="sidebar-link" href="<?php echo $urlHandler->organisation($org) ?>">
-                                        <span class="green">- </span><?php echo show_input($org->getName()) ?>
-                                    </a>
+                                <?php if ($partnerOrganisations) { ?>
+                                    <h4 class="involved-h4 orgs-h"><?php _ehtml('Organisations') ?></h4>
+                                    <?php foreach ($partnerOrganisations AS $org) { ?>
+                                        <a class="sidebar-link" href="<?php echo $urlHandler->organisation($org) ?>">
+                                            <span class="green">- </span><?php echo show_input($org->getName()) ?>
+                                        </a>
+                                    <?php } ?>
                                 <?php } ?>
                             </div>
                         </div>
