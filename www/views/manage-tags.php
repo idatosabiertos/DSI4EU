@@ -35,7 +35,7 @@ require __DIR__ . '/header.php';
         <div class="content-block">
             <div class="w-row">
                 <div class="w-col w-col-8 w-col-stack">
-                    <h1 class="content-h1">Manage Tags</h1>
+                    <h1 class="content-h1">Administrar Tags</h1>
                     <br/><br/>
                 </div>
             </div>
@@ -61,11 +61,11 @@ require __DIR__ . '/header.php';
                         <div class="filter-bar info-card">
                             <div class="w-form">
                                 <form id="email-form" name="email-form">
-                                    <h3 class="sidebar-h3">Filter Tags</h3>
+                                    <h3 class="sidebar-h3">Filtrar Tags</h3>
                                     <div class="search-div">
                                         <input class="sidebar-search-field w-input" data-ix="hide-search-icon"
                                                data-name="Search" id="Search" maxlength="256" name="Search"
-                                               placeholder="Search by name"
+                                               placeholder="Buscar por nombre"
                                                type="text" ng-model="searchName">
                                         <img class="search-mag"
                                              src="<?php echo SITE_RELATIVE_PATH ?>/images/ios7-search.png">
@@ -77,7 +77,7 @@ require __DIR__ . '/header.php';
                     <div class="w-col w-col-8">
                         <div class="w-row">
                             <div class="w-col">
-                                <h3>Network Tags</h3>
+                                <h3>Tags de Red</h3>
                                 <span class="manage-tag" ng-repeat="tag in data.networkTags
                                    | filter: startsWithLetter
                                    | filter: searchName
@@ -89,7 +89,7 @@ require __DIR__ . '/header.php';
                                 <div style="clear:both"></div>
 
                                 <br/>
-                                <h3>Organisation Tags</h3>
+                                <h3>Tags de Organización</h3>
                                 <span class="manage-tag" ng-repeat="tag in data.organisationTags
                                    | filter: startsWithLetter
                                    | filter: searchName
@@ -101,7 +101,7 @@ require __DIR__ . '/header.php';
                                 <div style="clear:both"></div>
 
                                 <br/>
-                                <h3>Project Tags</h3>
+                                <h3>Tags de PRoyectos</h3>
                                 <span class="manage-tag" ng-repeat="tag in data.projectTags
                                    | filter: startsWithLetter
                                    | filter: searchName
@@ -113,7 +113,7 @@ require __DIR__ . '/header.php';
                                 <div style="clear:both"></div>
 
                                 <br/>
-                                <h3>Project Impact Tags</h3>
+                                <h3>Tags de Área Temática</h3>
                                 <span class="manage-tag" ng-repeat="tag in data.projectImpactTags
                                    | filter: startsWithLetter
                                    | filter: searchName
