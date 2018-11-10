@@ -32,20 +32,20 @@ require __DIR__ . '/header.php';
                                             </label>
                                         </h3>
                                         <div style="float:right;font-size:10px;margin:-10px 10px">
-                                            <a href="{{item.url}}" target="_blank">View</a>
+                                            <a href="{{item.url}}" target="_blank">Ver</a>
                                             &nbsp;&nbsp;
-                                            <a href="#" ng-click="approveItem(item)" style="color:#1dc9a0">Approve</a>
+                                            <a href="#" ng-click="approveItem(item)" style="color:#1dc9a0">Aprobar</a>
                                             &nbsp;&nbsp;
-                                            <a href="#" ng-click="rejectItem(item)" style="color:red">Reject</a>
+                                            <a href="#" ng-click="rejectItem(item)" style="color:red">Declinar</a>
                                         </div>
                                         <div class="involved-tag" style="left:10px;width:100px">
                                             <span ng-if="item.updated === '<?= \DSI\Entity\ContentUpdate::New_Content ?>'">
-                                                <span ng-if="item.projectID">New Project</span>
-                                                <span ng-if="item.organisationID">New Organisation</span>
+                                                <span ng-if="item.projectID">Nuevo Proyecto</span>
+                                                <span ng-if="item.organisationID">Nueva Organización</span>
                                             </span>
                                             <span ng-if="item.updated === '<?= \DSI\Entity\ContentUpdate::Updated_Content ?>'">
-                                                <span ng-if="item.projectID">Updated Project</span>
-                                                <span ng-if="item.organisationID">Updated Organisation</span>
+                                                <span ng-if="item.projectID">Proyecto actualizado</span>
+                                                <span ng-if="item.organisationID">Organización actualizada</span>
                                             </span>
                                         </div>
                                     </div>
@@ -57,13 +57,13 @@ require __DIR__ . '/header.php';
                             </div>
                         </div>
                         <div class="w-row" ng-if="items.length > 0">
-                            <a href="#" ng-click="selectAll()">Select all</a>
+                            <a href="#" ng-click="selectAll()">Seleccionar todo</a>
                             &nbsp;&nbsp;
-                            <a href="#" ng-click="deselectAll()">Deselect all</a>
+                            <a href="#" ng-click="deselectAll()">Deseleccionar todo</a>
                         </div>
                         <div class="w-row" style="margin-top:20px" ng-if="items.length > 0">
-                            <button type="submit" name="submit" value="approve">Approve all selected</button>
-                            <button type="submit" name="submit" value="reject">Delete all selected</button>
+                            <button type="submit" name="submit" value="approve">Aprobar todo lo seleccionado</button>
+                            <button type="submit" name="submit" value="reject">Eliminar todo lo seleccionado</button>
                         </div>
                     </form>
                 </div>

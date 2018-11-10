@@ -36,7 +36,7 @@ require __DIR__ . '/header.php';
                         <div class="dashboard-widget">
                             <h3 class="card-h3"><?php _ehtml('Notifications') ?></h3>
                             <div class="card-p notification-stat" ng-cloak ng-hide="notificationsCount()">
-                                <?php _ehtml("You don't have any notifications at the moment.") ?>
+                                <?php _ehtml("You don't have any notifications at the moment") ?>
                             </div>
                             <div class="card-p notification-stat" ng-cloak ng-show="notificationsCount()">
                                 <?php echo sprintf(
@@ -170,7 +170,7 @@ require __DIR__ . '/header.php';
                             <?php } else { ?>
                                 <div class="card-p notification-stat">
                                     <?php if (count($projectsMember) == 1) {
-                                        _ehtml('You are participating in one project.');
+                                        _ehtml('You are participating in one project');
                                     } else {
                                         echo sprintf(
                                             __('You are participating in %s projects.'),

@@ -18,7 +18,7 @@ require __DIR__ . '/header.php';
                     <?php echo show_input($user->getCompany()) ?>
                 </div>
                 <p class="intro"><?php echo nl2br(show_input($user->getBio())) ?></p>
-                <h3>Location</h3>
+                <h3>Ubicación</h3>
                 <p>
                     <?php echo show_input($user->getCityName()) ?>
                     <?php if ($user->getCityName() != '' AND $user->getCountryName() != '') echo ', '; ?>
@@ -26,13 +26,13 @@ require __DIR__ . '/header.php';
                 </p>
             </div>
             <div class="sidebar w-col w-col-4">
-                <h1 class="content-h1 side-bar-space-h1">Actions</h1>
+                <h1 class="content-h1 side-bar-space-h1">Acciones</h1>
                 <a class="sidebar-link" href="<?php echo $urlHandler->editUserProfile($user) ?>">
-                    <span class="green">-&nbsp;</span>Edit profile</a>
+                    <span class="green">-&nbsp;</span>Editar perfil</a>
                 <a class="sidebar-link" href="<?php echo $urlHandler->editUserPrivileges($user) ?>">
-                    <span class="green">-&nbsp;</span>Edit privileges</a>
+                    <span class="green">-&nbsp;</span>Editar permisos</a>
                 <?php /* <a class="sidebar-link" href="<?php echo $urlHandler->logout() ?>">
-                     <span class="green">- Sign out</span></a> */ ?>
+                     <span class="green">- Cerrar sesión</span></a> */ ?>
             </div>
         </div>
     </div>
@@ -44,20 +44,20 @@ require __DIR__ . '/header.php';
                 </div>
                 <div class="w-col w-col-4 w-col-stack">
                     <div class="info-card" style="padding:10px">
-                        <h2>Change user privileges</h2>
+                        <h2>Cambiar permisos de usuario</h2>
                         <form method="post" action="">
                             <select name="userRole" class="select2" style="width:100%">
                                 <option value="user">
-                                    Ordinary User
+                                    Usuario Regular
                                 </option>
                                 <option <?php if ($user->isEditorialAdmin()) echo 'selected' ?> value="editorial-admin">
-                                    Editorial Admin
+                                    Admin Editorial
                                 </option>
                                 <option <?php if ($user->isCommunityAdmin()) echo 'selected' ?> value="community-admin">
-                                    Community Admin
+                                    Admin de la comunidad
                                 </option>
                                 <option <?php if ($user->isSysAdmin()) echo 'selected' ?> value="sys-admin">
-                                    System Admin
+                                    Admin del Sistema
                                 </option>
                             </select>
                             <br/><br/>
@@ -65,7 +65,7 @@ require __DIR__ . '/header.php';
                             <input type="hidden" name="secureCode" value="<?php echo $securityCode ?>"/>
 
                             <input type="submit" class="tab-button-2 tab-button-next w-button" name="save"
-                                   value="Save"/>
+                                   value="Guardar"/>
 
                             <br/><br/>
                             <br/>

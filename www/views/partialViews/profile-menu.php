@@ -10,6 +10,6 @@ use \DSI\Service\Sysctl;
 <a class="sidebar-link" href="<?php echo $urlHandler->profile($loggedInUser) ?>">
     <span class="green">-&nbsp;</span><?php _e('View profile')?></a>
 <a class="sidebar-link" href="<?php echo $urlHandler->editUserProfile($loggedInUser) ?>">
-    <span class="green">-&nbsp;</span><?php _e('Edit profile')?></a>
+    <span class="green">-&nbsp;</span><?php _e('Edit Profile')?></a>
 <a class="sidebar-link" href="<?php echo $urlHandler->logout() ?>">
     <span class="green">- <?php _e('Sign out')?></span></a>
