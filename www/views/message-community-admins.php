@@ -27,7 +27,7 @@ require __DIR__ . '/header.php';
                 </div>
                 <div class="w-col w-col-8 w-col-stack">
                     <div class="info-card" style="padding:10px">
-                        <h2>Send message to all community admins</h2>
+                        <h2>Enviar mensaje a todos los administradores de la comunidad</h2>
                         <?php if (isset($_SESSION['success'])) { ?>
                             <h4 style="color:green"><?php echo show_input($_SESSION['success']) ?></h4>
                             <?php unset($_SESSION['success']) ?>
@@ -35,14 +35,14 @@ require __DIR__ . '/header.php';
 
                         <form method="post" action="">
                             <textarea name="message" style="width:100%;height:200px"></textarea>
-                            <i>*Your name and profile link will be sent together with the email</i>
+                            <i>*Su nombre y enlace de perfil serán enviados junto con el correo electrónico</i>
 
                             <br/><br/>
 
                             <input type="hidden" name="secureCode" value="<?php echo $securityCode ?>"/>
 
                             <input type="submit" class="tab-button-2 tab-button-next w-button" name="save"
-                                   value="Send"/>
+                                   value="Enviar"/>
 
                             <br/><br/>
                             <br/>
