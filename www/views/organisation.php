@@ -258,15 +258,6 @@ if (!isset($urlHandler))
                                     </a>
                                 </div>
                             <?php } ?>
-                            <?php if (isset($links['googleplus'])) { ?>
-                                <div class="inline sm-nu-bloxk w-clearfix">
-                                    <a href="<?php echo $links['googleplus'] ?>" target="_blank">
-                                        <img class="sm-icon" width="40"
-                                             src="<?php echo SITE_RELATIVE_PATH ?>/images/google-plus-logo.png">
-                                        <div class="hero-social-label">Google +</div>
-                                    </a>
-                                </div>
-                            <?php } ?>
                             */ ?>
 
     <script src="<?php echo SITE_RELATIVE_PATH ?>/js/controllers/OrganisationController.js?<?php \DSI\Service\Sysctl::echoVersion() ?>"></script>

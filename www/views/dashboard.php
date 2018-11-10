@@ -129,23 +129,20 @@ require __DIR__ . '/header.php';
                                 <div class="card-p notification-stat">
                                     <?php /*
                                     <a class="sidebar-link" href="<?php echo $urlHandler->home() ?>">
-                                        <span class="green">-&nbsp;</span>Manage tags
+                                        <span class="green">-&nbsp;</span>Administrar tags
                                     </a>
                                     */ ?>
-                                    <a class="sidebar-link" href="<?php echo $urlHandler->addFunding() ?>">
-                                        <span class="green">-&nbsp;</span>Add funding
+                                    <a class="sidebar-link" href="<?php echo $urlHandler->waitingApproval() ?>">
+                                        <span class="green">-&nbsp;</span>Aprobaciones pendientes
                                     </a>
                                     <a class="sidebar-link" href="<?php echo $urlHandler->addCaseStudy() ?>">
-                                        <span class="green">-&nbsp;</span>Add case study
-                                    </a>
-                                    <a class="sidebar-link" href="<?php echo $urlHandler->addEvent() ?>">
-                                        <span class="green">-&nbsp;</span>Add event
+                                        <span class="green">-&nbsp;</span>Agregar caso de estudio
                                     </a>
                                     <a class="sidebar-link" href="<?php echo $urlHandler->messageCommunityAdmins() ?>">
-                                        <span class="green">-&nbsp;</span>Message all community admins
+                                        <span class="green">-&nbsp;</span>Enviar mensaje a todos los administradores
                                     </a>
                                     <a class="sidebar-link" href="<?php echo $urlHandler->manageTags() ?>">
-                                        <span class="green">-&nbsp;</span>See all tags
+                                        <span class="green">-&nbsp;</span>Ver todos los tags
                                     </a>
                                 </div>
                             </div>

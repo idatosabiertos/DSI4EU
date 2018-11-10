@@ -107,12 +107,6 @@ if (!isset($urlHandler))
                                                                    ng-model="organisation.links.twitter"
                                                                    placeholder="Twitter" type="text">
                                                             <input class="creator-data-entry w-input"
-                                                                   data-name="Email 4"
-                                                                   id="email-4" maxlength="256" name="email-4"
-                                                                   ng-model="organisation.links.googleplus"
-                                                                   placeholder="Google plus"
-                                                                   type="text">
-                                                            <input class="creator-data-entry w-input"
                                                                    data-name="Email 5"
                                                                    id="email-5" maxlength="256" name="email-5"
                                                                    ng-model="organisation.links.github"
