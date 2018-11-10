@@ -45,9 +45,9 @@ require __DIR__ . '/header.php';
                 </div>
                 <?php if ($userCanAddStory) { ?>
                     <div class="sidebar w-col w-col-4 w-col-stack">
-                        <h1 class="content-h1 side-bar-space-h1">Actions</h1>
+                        <h1 class="content-h1 side-bar-space-h1">Acciones</h1>
                         <a class="sidebar-link" href="<?php echo $urlHandler->blogPostAdd() ?>"><span
-                                class="green">- </span>Add new post</a>
+                                class="green">- </span>Agregar un nuevo post</a>
                     </div>
                 <?php } ?>
 
@@ -56,11 +56,11 @@ require __DIR__ . '/header.php';
                 <div class="alphabet-selectors w-clearfix">
                     <a class="alphabet-link post-filter w-inline-block" ng-click="searchCriteria.published = true"
                        href="#">
-                        <div>Published</div>
+                        <div>Publicado</div>
                     </a>
                     <a class="alphabet-link post-filter w-inline-block" ng-click="searchCriteria.published = false"
                        href="#">
-                        <div>Unpublished</div>
+                        <div>No Publicado</div>
                     </a>
                 </div>
             <?php } ?>
