@@ -193,12 +193,8 @@ if (!isset($urlHandler))
                 <div class="active language log-in-link" data-ix="create-dropdown">
                     <img class="language-icon" src="<?php echo SITE_RELATIVE_PATH ?>/images/ios7-world-outline.png">
                     <div class="create-drop-down-block language-selctor">
-                        <a class="drop-down-link-li" href="<?php echo (new URL('ca'))->home() ?>">Català</a>
-                        <a class="drop-down-link-li" href="<?php echo (new URL('de'))->home() ?>">Deutsch</a>
-                        <a class="drop-down-link-li" href="/en">English</a>
                         <a class="drop-down-link-li" href="/">Español</a>
-                        <a class="drop-down-link-li" href="<?php echo (new URL('fr'))->home() ?>">Français</a>
-                        <a class="drop-down-link-li" href="<?php echo (new URL('it'))->home() ?>">Italiano</a>
+                        <a class="drop-down-link-li" href="/en">English</a>
                     </div>
                 </div>
             </div>

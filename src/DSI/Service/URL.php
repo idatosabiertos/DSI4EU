@@ -429,10 +429,7 @@ class URL
      */
     private function addLanguage()
     {
-        if ($this->currentLanguage != Translation::DEFAULT_LANGUAGE)
-            return $this->currentLanguage . '/';
-
-        return '';
+        return $this->currentLanguage . '/';
     }
 
     /**
