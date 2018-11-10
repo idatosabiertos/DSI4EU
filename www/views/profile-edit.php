@@ -212,10 +212,6 @@ $leftSideText .= "<p>" . _html('Boost your profile by registering as a team memb
                                                                    name="email-5" placeholder="Github"
                                                                    ng-model="user.links.github" type="text">
                                                             <input class="creator-data-entry w-input"
-                                                                   data-name="Email 4" id="email-4" maxlength="256"
-                                                                   name="email-4" placeholder="Google +"
-                                                                   ng-model="user.links.googleplus" type="text">
-                                                            <input class="creator-data-entry w-input"
                                                                    data-name="Email 4" maxlength="256" type="text"
                                                                    placeholder="<?php _ehtml('Personal Website') ?>"
                                                                    ng-model="user.links.other" name="email-4">
