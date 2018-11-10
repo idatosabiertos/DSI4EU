@@ -73,8 +73,8 @@ angular
 
         $scope.confirmDelete = function (url) {
             swal({
-                title: "Delete the organisation",
-                text: "Are you sure you want to delete this organisation?",
+                title: "Eliminar Organización",
+                text: "Estás seguro que deseas eliminar esta organización?",
                 type: "warning",
                 showCancelButton: true,
                 closeOnConfirm: false,
@@ -111,8 +111,8 @@ angular
 
                 function successfulDeletion(url) {
                     swal({
-                        title: "Deleted",
-                        text: "The organisation has been deleted.",
+                        title: "Eliminada",
+                        text: "La organización ha sido eliminada.",
                         type: "success"
                     }, function () {
                         window.location.href = url
@@ -122,10 +122,10 @@ angular
         };
         $scope.report = function (url) {
             swal({
-                title: "Report this organisation",
-                text: "Please tell us why you are reporting this organisation",
+                title: "Reportar esta organización",
+                text: "Por favor, díganos por qué está reportando esta organización",
                 type: "input",
-                inputPlaceholder: "Reason for report",
+                inputPlaceholder: "Razón del reporte",
                 showCancelButton: true,
                 closeOnConfirm: false,
                 showLoaderOnConfirm: true
@@ -133,7 +133,7 @@ angular
                 if (inputValue === false) return false;
 
                 if (inputValue === "") {
-                    swal.showInputError("Please type the reason for reporting this organisation.");
+                    swal.showInputError("Por favor escriba la razón para reportar esta organización.");
                     return false
                 }
 
@@ -169,8 +169,8 @@ angular
 
                 function successfulReport(url) {
                     swal({
-                        title: "Reported",
-                        text: "Thank you for reporting this organisation.",
+                        title: "Reportada",
+                        text: "Gracias por reportar esta organización.",
                         type: "success"
                     });
                 }
@@ -201,7 +201,7 @@ angular
             }).then(function (response) {
                 $scope.addOrganisationMember.loading = false;
                 if (response.data.result == 'ok') {
-                    $scope.addOrganisationMember.success = newMember.firstName + ' ' + newMember.lastName + ' has been successfully invited';
+                    $scope.addOrganisationMember.success = newMember.firstName + ' ' + newMember.lastName + ' ha sido exitosamente invitado';
                 } else if (response.data.result == 'error') {
                     $scope.addOrganisationMember.errors = response.data.errors;
                 } else {
@@ -282,15 +282,15 @@ angular
         $scope.cancelJoinRequest = function () {
             Helpers.swalWarning({
                 options: {
-                    title: "Cancel Join Request",
-                    text: "Are you sure you want to cancel the join request?"
+                    title: "Cancelar Solicitud de Inscripción",
+                    text: "¿Está seguro de que desea cancelar la solicitud?"
                 },
                 post: {
                     cancelJoinRequest: true
                 },
                 success: {
-                    title: "Request Cancelled",
-                    text: "Your request has been cancelled"
+                    title: "Solicitud cancelada",
+                    text: "Su solicitud ha sido cancelada."
                 },
                 successCallback: function () {
                     location.reload();
@@ -300,15 +300,15 @@ angular
         $scope.joinOrganisation = function () {
             Helpers.swalWarning({
                 options: {
-                    title: "Join Organisation",
-                    text: "Are you sure you want to join this organisation?"
+                    title: "Unirse a la Organización",
+                    text: "¿Estás seguro de que quieres unirte a esta organización?"
                 },
                 post: {
                     joinOrganisation: true
                 },
                 success: {
-                    title: "Success",
-                    text: "Join request has been sent"
+                    title: "Exito!",
+                    text: "Se ha enviado la solicitud de incorporación."
                 },
                 successCallback: function () {
                     location.reload();
@@ -318,15 +318,15 @@ angular
         $scope.leaveOrganisation = function () {
             Helpers.swalWarning({
                 options: {
-                    title: "Leave Organisation",
-                    text: "Are you sure you want to leave this organisation?"
+                    title: "Dejar organizacion",
+                    text: "¿Estás seguro de que quieres abandonar esta organización?"
                 },
                 post: {
                     leaveOrganisation: true
                 },
                 success: {
-                    title: "Success",
-                    text: "You have left this organisation"
+                    title: "Exito!",
+                    text: "Has dejado esta organizacion"
                 },
                 successCallback: function () {
                     location.reload();
@@ -337,15 +337,15 @@ angular
         $scope.followOrganisation = function () {
             Helpers.swalWarning({
                 options: {
-                    title: "Follow Organisation",
-                    text: "Are you sure you want to follow this organisation?"
+                    title: "Seguir Organización",
+                    text: "¿Estás seguro de que quieres seguir esta organización?"
                 },
                 post: {
                     followOrganisation: true
                 },
                 success: {
-                    title: "Success",
-                    text: "You are now following this organisation."
+                    title: "Exito!",
+                    text: "Ahora estás siguiendo esta organización"
                 },
                 successCallback: function () {
                     location.reload();
@@ -355,15 +355,15 @@ angular
         $scope.unfollowOrganisation = function () {
             Helpers.swalWarning({
                 options: {
-                    title: "Unfollow Organisation",
-                    text: "Are you sure you want to unfollow this organisation?"
+                    title: "Dejar de seguir organización",
+                    text: "¿Estás seguro de que quieres dejar de seguir esta organización?"
                 },
                 post: {
                     unfollowOrganisation: true
                 },
                 success: {
-                    title: "Success",
-                    text: "You won't receive any more news from this organisation."
+                    title: "Exito!",
+                    text: "No recibirás más noticias de esta organización."
                 },
                 successCallback: function () {
                     location.reload();

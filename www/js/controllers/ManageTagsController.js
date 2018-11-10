@@ -61,8 +61,8 @@ angular
 
         function deleteTag(tag, postField, filterTags) {
             swal({
-                title: "Delete tag",
-                text: "Are you sure you want to delete this tag?",
+                title: "Eliminar tag",
+                text: "¿Estás seguro de que quieres eliminar este tag?",
                 type: "warning",
                 showCancelButton: true,
                 closeOnConfirm: false,
@@ -77,8 +77,8 @@ angular
                     .then(function (response) {
                         if (response.data.code == 'ok') {
                             swal({
-                                title: "Deleted",
-                                text: "The tag has been deleted",
+                                title: "Eliminado",
+                                text: "El tag ha sido eliminado",
                                 type: "success"
                             });
 

@@ -21,14 +21,14 @@ angular
 
         if (askForPermanentLogin) {
             swal({
-                title: "Welcome back",
-                text: "Would you like to remember you next time when you visit the website?",
+                title: "Bienvenido",
+                text: "¿Te gustaría recordarte la próxima vez que visites el sitio web?",
                 type: "info",
                 showCancelButton: true,
                 closeOnConfirm: false,
                 closeOnCancel: false,
                 showLoaderOnConfirm: true,
-                confirmButtonText: "Yes",
+                confirmButtonText: "Si",
                 cancelButtonText: "No"
             }, function (confirm) {
                 if (confirm) {
@@ -38,8 +38,8 @@ angular
                         $scope.joinProject.loading = false;
                         if (response.data.code == 'ok') {
                             swal({
-                                title: "Success",
-                                text: "You will automaticaly be logged in next time when you visit the site.",
+                                title: "Exito",
+                                text: "Automáticamente se iniciará sesión la próxima vez que visite el sitio.",
                                 type: "success"
                             }, function () {
                                 window.location.href = window.location.pathname;
@@ -160,10 +160,10 @@ angular
 
         $scope.setDisabled = function (disable) {
             swal({
-                title: disable ? "Disable the user" : "Re-enable the user",
+                title: disable ? "Deshabilitar usuario" : "Habilitar usuario",
                 text: disable ?
-                    "Are you sure you want to disable this user?" :
-                    "Are you sure you want to re-enable this user?",
+                    "¿Estás seguro de que quieres deshabilitar a este usuario?" :
+                    "¿Estás seguro de que quieres volver a habilitar a este usuario?",
                 type: "warning",
                 showCancelButton: true,
                 closeOnConfirm: false,
@@ -200,10 +200,10 @@ angular
 
                 function successfulDeletion(url) {
                     swal({
-                        title: disable ? "Deleted" : "Re-enabled",
+                        title: disable ? "Deshabilitado" : "Habilitado",
                         text: disable ?
-                            "This user has been disabled." :
-                            "This user has been re-enabled",
+                            "Este usuario ha sido desactivado." :
+                            "Este usuario ha sido activado",
                         type: "success"
                     }, function () {
                         window.location.href = url
@@ -214,18 +214,18 @@ angular
 
         $scope.report = function () {
             swal({
-                title: "Report this user",
-                text: "Please tell us why you are reporting this profile",
+                title: "Reportar este usuario",
+                text: "Por favor, dinos por qué estás reportando este perfil",
                 type: "input",
                 showCancelButton: true,
                 closeOnConfirm: false,
                 showLoaderOnConfirm: true,
-                inputPlaceholder: "Reason for reporting"
+                inputPlaceholder: "Razón del reporte"
             }, function (inputValue) {
                 if (inputValue === false) return false;
 
                 if (inputValue === "") {
-                    swal.showInputError("You need to write something!");
+                    swal.showInputError("Debes escribir algo!");
                     return false
                 }
 
@@ -261,8 +261,8 @@ angular
 
                 function successfulReport(url) {
                     swal({
-                        title: "Reported",
-                        text: "Thank you for your report",
+                        title: "Reportado",
+                        text: "Gracias por tu reporte",
                         type: "success"
                     });
                 }

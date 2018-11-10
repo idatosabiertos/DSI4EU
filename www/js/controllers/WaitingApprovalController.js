@@ -94,17 +94,17 @@ angular
     $scope.rejectItem = function (item) {
       Helpers.swalWarning({
         options: {
-          title: item.projectID ? 'Delete project' : 'Delete organisation',
-          text: item.projectID ? "Are you sure you want to delete this project?" :
-            "Are you sure you want to delete this organisation?"
+          title: item.projectID ? 'Eliminar proyecto' : 'Eliminar organización',
+          text: item.projectID ? "¿Estás seguro de que quieres eliminar este proyecto?\n" :
+            "¿Estás seguro de que quieres eliminar esta organización?"
         },
         post: {
           rejectItem: true,
           id: item.id
         },
         success: {
-          title: item.projectID ? "Project deleted" : "Organisation deleted",
-          text: item.projectID ? "The project has been deleted" : "The organisation has been deleted"
+          title: item.projectID ? "Proyecto eliminado" : "Organización eliminada",
+          text: item.projectID ? "El proyecto ha sido eliminado" : "La organización ha sido eliminada"
         },
         successCallback: function () {
           $scope.items = $scope.items.filter(function (_item) {

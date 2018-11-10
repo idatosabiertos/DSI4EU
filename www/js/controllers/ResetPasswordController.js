@@ -16,8 +16,8 @@ angular
                         $scope.errors = response.data.errors;
                     } else if (response.data.code == 'ok') {
                         swal({
-                            title: "Success",
-                            text: "Your password has been successfully set.",
+                            title: "Exito",
+                            text: "Su contraseña se ha establecido correctamente.",
                             type: "success"
                         }, function () {
                             window.location.href = response.data.url;

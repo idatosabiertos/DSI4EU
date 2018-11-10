@@ -27,7 +27,7 @@ angular
                         $scope.loading = false;
                         if (response.data.code == 'ok') {
                             // swal(response.data.message.title, response.data.message.text, "success");
-                            swal('Success', 'Case Study details have been changed', "success");
+                            swal('Success', 'Los detalles del caso de estudio han sido cambiados.', "success");
                         } else if (response.data.code == 'error') {
                             $scope.errors = response.data.errors;
                             console.log(response.data.errors);

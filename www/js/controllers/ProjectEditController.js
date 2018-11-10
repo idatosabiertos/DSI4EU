@@ -32,7 +32,7 @@
                     postField: 'step1',
                     onSuccess: function () {
                         if (params && params.proceed == false) {
-                            swal('Success!', 'The changes have been successfully saved.', 'success');
+                            swal('Exito!', 'Los cambios se han guardado con éxito.', 'success');
                         } else {
                             $scope.currentTab = 'step2';
                         }
@@ -63,7 +63,7 @@
                     postField: 'step2',
                     onSuccess: function () {
                         if (params && params.proceed == false) {
-                            swal('Success!', 'The changes have been successfully saved.', 'success');
+                            swal('Exito!', 'Los cambios se han guardado con éxito.', 'success');
                         } else {
                             $scope.currentTab = 'step3';
                         }
@@ -77,7 +77,7 @@
                     postField: 'step3',
                     onSuccess: function () {
                         if (params && params.proceed == false) {
-                            swal('Success!', 'The changes have been successfully saved.', 'success');
+                            swal('Exito!', 'Los cambios se han guardado con éxito.', 'success');
                         } else {
                             $scope.currentTab = 'step4';
                         }
@@ -88,7 +88,7 @@
                 $scope.errors = {};
                 if (!$scope.project.confirm) {
                     $scope.errors = {
-                        confirm: 'You have to agree with our terms and conditions'
+                        confirm: 'Tienes que estar de acuerdo con nuestros términos y condiciones.\n'
                     };
                 } else {
                     $scope.project.logo = $scope.logo.image;
@@ -97,8 +97,8 @@
                         postField: 'step4',
                         onSuccess: function () {
                             swal({
-                                title: "Success!",
-                                text: "The project details have been successfully saved.",
+                                title: "Exito!",
+                                text: "Los detalles del proyecto se han guardado con éxito.",
                                 type: "success"
                             }, function (isConfirm) {
                                 window.location.href = projectURL;

@@ -21,7 +21,7 @@ angular
                 postField: 'step1',
                 onSuccess: function () {
                     if (params && params.proceed == false) {
-                        swal('Success!', 'The changes have been successfully saved.', 'success');
+                        swal('Exito!', 'Los cambios se han guardado con éxito.', 'success');
                     } else {
                         $scope.currentTab = 'step2';
                     }
@@ -35,7 +35,7 @@ angular
                 postField: 'step2',
                 onSuccess: function () {
                     if (params && params.proceed == false) {
-                        swal('Success!', 'The changes have been successfully saved.', 'success');
+                        swal('Exito!', 'Los cambios se han guardado con éxito.', 'success');
                     } else {
                         $scope.currentTab = 'step3';
                     }
@@ -49,13 +49,13 @@ angular
                 postField: 'step3',
                 onSuccess: function () {
                     if (params && params.proceed == false) {
-                        swal('Success!', 'The changes have been successfully saved.', 'success');
+                        swal('Exito!', 'Los cambios se han guardado con éxito.', 'success');
                     } else {
                         swal({
-                            title: 'Success',
-                            text: 'Your profile has been successfully updated',
+                            title: 'Exito!',
+                            text: 'Tú perfil ha sido actualizado satisfactoriamente',
                             type: "success",
-                            confirmButtonText: "Go to my profile"
+                            confirmButtonText: "Ir a mi perfil"
                         }, function () {
                             window.location.href = profilePage;
                         });

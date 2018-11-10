@@ -43,12 +43,12 @@ angular
 
         $scope.declineProjectInvitation = function (invitation) {
             swal({
-                title: "Are you sure?",
-                text: "You will not be able to join this project at this time",
+                title: "¿Estás seguro?",
+                text: "No podrás unirte a este proyecto en este momento.",
                 type: "warning",
                 showCancelButton: true,
                 confirmButtonColor: "#DD6B55",
-                confirmButtonText: "Yes, continue!",
+                confirmButtonText: "Si, continuar!",
                 closeOnConfirm: false
             }, function () {
                 $http.post(url, {
@@ -85,12 +85,12 @@ angular
 
         $scope.declineOrganisationInvitation = function (invitation) {
             swal({
-                title: "Are you sure?",
-                text: "You will not be able to join this organisation at this time",
+                title: "¿Estás seguro?",
+                text: "No podrás unirte a esta organización en este momento.",
                 type: "warning",
                 showCancelButton: true,
                 confirmButtonColor: "#DD6B55",
-                confirmButtonText: "Yes, continue!",
+                confirmButtonText: "Si, Continuar!",
                 closeOnConfirm: false
             }, function () {
                 $http.post(url, {
@@ -128,12 +128,12 @@ angular
 
         $scope.declineOrganisationRequest = function (invitation) {
             swal({
-                title: "Are you sure?",
-                text: "The user will not be able to join the organisation at this time",
+                title: "¿Estás seguro?",
+                text: "El usuario no podrá unirse a la organización en este momento.",
                 type: "warning",
                 showCancelButton: true,
                 confirmButtonColor: "#DD6B55",
-                confirmButtonText: "Yes, continue!",
+                confirmButtonText: "Si, Continuar!",
                 closeOnConfirm: false
             }, function () {
                 $http.post(url, {
@@ -172,12 +172,12 @@ angular
 
         $scope.declineProjectRequest = function (invitation) {
             swal({
-                title: "Are you sure?",
-                text: "The user will not be able to join the project at this time",
+                title: "¿Estás seguro?",
+                text: "El usuario no podrá unirse al proyecto en este momento.",
                 type: "warning",
                 showCancelButton: true,
                 confirmButtonColor: "#DD6B55",
-                confirmButtonText: "Yes, continue!",
+                confirmButtonText: "Si, Continuar!",
                 closeOnConfirm: false
             }, function () {
                 $http.post(url, {
@@ -200,11 +200,11 @@ angular
         $scope.terminateAccount = function () {
             swal({
                     title: "",
-                    text: translate.get("Are you sure you want to terminate your account?"),
+                    text: translate.get("¿Estás seguro de que quieres cancelar tu cuenta?"),
                     type: "info",
                     showCancelButton: true,
                     confirmButtonColor: "#DD6B55",
-                    confirmButtonText: translate.get("Yes"),
+                    confirmButtonText: "Si",
                     closeOnConfirm: false,
                     showLoaderOnConfirm: true
                 },
@@ -214,7 +214,7 @@ angular
                             if (response.data.code == 'ok') {
                                 swal(
                                     "",
-                                    translate.get("An email will be sent to you to confirm your request."),
+                                    translate.get("Se le enviará un correo electrónico para confirmar su solicitud."),
                                     "success"
                                 );
                             } else {

@@ -80,7 +80,7 @@ angular
                         .then(function (response) {
                             $scope.loading = false;
                             if (response.data.code == 'ok') {
-                                swal('Success', 'Changes have been successfully saved', "success");
+                                swal('Exito', 'Los cambios se han guardado con éxito', "success");
                             } else if (response.data.code == 'error') {
                                 $scope.errors = response.data.errors;
                                 console.log({errors: response.data.errors});

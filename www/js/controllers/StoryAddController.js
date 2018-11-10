@@ -82,8 +82,8 @@ angular
                         $scope.loading = false;
                         if (response.data.code == 'ok') {
                             swal({
-                                title: 'Success',
-                                text: 'The story has been successfully created',
+                                title: 'Exito',
+                                text: 'La historia ha sido creada exitosamente.',
                                 type: "success"
                             }, function () {
                                 window.location.href = response.data.url;

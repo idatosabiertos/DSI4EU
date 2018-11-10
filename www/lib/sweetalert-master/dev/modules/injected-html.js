@@ -1,4 +1,4 @@
-var injectedHTML = 
+var injectedHTML =
 
   // Dark overlay
   `<div class="sweet-overlay" tabIndex="-1"></div>` +
@@ -50,9 +50,9 @@ var injectedHTML =
 
     // Cancel and confirm buttons
     `<div class="sa-button-container">
-      <button class="cancel" tabIndex="2">Cancel</button>
+      <button class="cancel" tabIndex="2">Cancelar</button>
       <div class="sa-confirm-button-container">
-        <button class="confirm" tabIndex="1">OK</button>` + 
+        <button class="confirm" tabIndex="1">Aceptar</button>` +
 
         // Loading animation
         `<div class="la-ball-fall">
