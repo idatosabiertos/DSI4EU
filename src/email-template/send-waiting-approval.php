@@ -23,9 +23,9 @@ if (!isset($urlHandler))
                 </td>
                 <td>
                     <?php if ($contentUpdate->getProjectID()) { ?>
-                        project
+                        proyecto
                     <?php } else { ?>
-                        organisation
+                        organización
                     <?php } ?>
                 </td>
                 <td>
@@ -36,9 +36,9 @@ if (!isset($urlHandler))
         </tbody>
     </table>
 <?php } else { ?>
-    <h3>There are no new projects or organisations</h3>
+    <h3>No hay nuevos proyectos u organizaciones.</h3>
 <?php } ?>
 
 <p style="margin-top:30px">
-    <a href="<?= $urlHandler->fullUrl($urlHandler->waitingApproval()) ?>">See all waiting approvals</a>
+    <a href="<?= $urlHandler->fullUrl($urlHandler->waitingApproval()) ?>">Ver todas las aprobaciones en espera</a>
 </p>

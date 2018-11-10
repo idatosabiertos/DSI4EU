@@ -402,10 +402,10 @@ if (!isset($urlHandler))
                         <td align="center">
                             <p>
                                 <a href="https://<?php echo SITE_DOMAIN . $urlHandler->termsOfUse() ?>">
-                                    Terms of Use</a>
+                                    Condiciones de uso</a>
                                 |
                                 <a href="https://<?php echo SITE_DOMAIN . $urlHandler->privacyPolicy() ?>">
-                                    Privacy Policy</a>
+                                    Politica de privacidad</a>
                             </p>
                         </td>
                     </tr>

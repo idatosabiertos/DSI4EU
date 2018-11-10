@@ -1,5 +1,5 @@
 <div>
-    Welcome to <a href="https://<?php echo SITE_DOMAIN ?>/">DigitalSocial.eu</a>,<br/><br/>
-    After completing your registration you will be able to add a project or organisation,
-    join existing projects and organisations or view funding opportunities and events.
+    Bienvenido a <a href="https://<?php echo SITE_DOMAIN ?> /">exploralat.am </a>, <br/> <br/>
+    Después de completar su registro podrá agregar un proyecto u organización,
+    únase a proyectos y organizaciones existentes.
 </div>

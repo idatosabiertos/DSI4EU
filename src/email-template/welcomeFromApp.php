@@ -1,13 +1,14 @@
 <?php
 /** @var string $code */
 ?>
-Welcome to <a href="https://<?php echo SITE_DOMAIN ?>/">DigitalSocial.eu</a>,
+Bienvenido a <a href="https://<?php echo SITE_DOMAIN ?>/">exploralat.am</a>,
 <br/><br/>
-Please <a href="https://<?php echo SITE_DOMAIN ?>/reset-password">click here</a>
-to complete your registration.<br/>
-Your security code is: <b><?php echo $code ?></b>
+Por favor <a href="https://<?php echo SITE_DOMAIN ?>/reset-password">haga click aquí</a>
+para completar su registro.<br/>
+Su código de seguridad es: <b><?php echo $code ?></b>
 <br/><br/>
-For security reasons, this code expires in 24 hours. You can generate a new code after 24 hours.
+Por razones de seguridad, este código expirará en 24 horas. Puede volver a generarlo luego de 24 horas
 <br/><br/>
-After completing your registration you will be able to add a project or organisation,
-join existing projects and organisations or view funding opportunities and events.
+
+Después de completar su registro podrá agregar un proyecto u organización,
+únase a proyectos y organizaciones existentes.

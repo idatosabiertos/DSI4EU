@@ -59,9 +59,9 @@ class SendWelcomeEmailAfterRegistration
         $email->From = 'noreply@digitalsocial.eu';
         $email->FromName = 'Digital Social Innovation';
         $email->addAddress($this->data()->emailAddress);
-        $email->Subject = 'Welcome to Digital Social Innovation';
+        $email->Subject = 'Bienvenido a EXPLORALATAM';
         $email->wrapMessageInTemplate([
-            'header' => 'Welcome to Digital Social Innovation',
+            'header' => 'Bienvenido a EXPLORALATAM',
             'body' => $message
         ]);
         $email->isHTML(true);
