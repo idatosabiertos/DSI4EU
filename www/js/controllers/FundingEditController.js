@@ -27,8 +27,8 @@ angular
                     $scope.loading = false;
                     if (response.data.code == 'ok') {
                         swal({
-                            title: 'Success',
-                            text: 'The funding has been successfully updated',
+                            title: 'Éxito',
+                            text: 'La financiación ha sido actualizada con éxito',
                             type: "success"
                         });
                     } else if (response.data.code == 'error') {

@@ -7,6 +7,8 @@ angular
         swal({
                 title: "",
                 text: translate.get("Are you sure you want to terminate your account?"),
+                confirmButtonText: translate.get("Yes"),
+                cancelButtonText: translate.get("Cancel"),
                 type: "info",
                 showCancelButton: true,
                 confirmButtonColor: "#DD6B55",

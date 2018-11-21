@@ -75,6 +75,8 @@ angular
             swal({
                 title: "Eliminar Organización",
                 text: "Estás seguro que deseas eliminar esta organización?",
+                confirmButtonText: "Si",
+                cancelButtonText: "Cancelar",
                 type: "warning",
                 showCancelButton: true,
                 closeOnConfirm: false,
@@ -283,7 +285,9 @@ angular
             Helpers.swalWarning({
                 options: {
                     title: "Cancelar Solicitud de Inscripción",
-                    text: "¿Está seguro de que desea cancelar la solicitud?"
+                    text: "¿Está seguro de que desea cancelar la solicitud?",
+                    confirmButtonText: "Si",
+                    cancelButtonText: "Cancelar",
                 },
                 post: {
                     cancelJoinRequest: true
@@ -301,7 +305,9 @@ angular
             Helpers.swalWarning({
                 options: {
                     title: "Unirse a la Organización",
-                    text: "¿Estás seguro de que quieres unirte a esta organización?"
+                    text: "¿Estás seguro de que quieres unirte a esta organización?",
+                    confirmButtonText: "Si",
+                    cancelButtonText: "Cancelar"
                 },
                 post: {
                     joinOrganisation: true
@@ -319,7 +325,9 @@ angular
             Helpers.swalWarning({
                 options: {
                     title: "Dejar organizacion",
-                    text: "¿Estás seguro de que quieres abandonar esta organización?"
+                    text: "¿Estás seguro de que quieres abandonar esta organización?",
+                    confirmButtonText: "Si",
+                    cancelButtonText: "Cancelar"
                 },
                 post: {
                     leaveOrganisation: true
@@ -338,7 +346,9 @@ angular
             Helpers.swalWarning({
                 options: {
                     title: "Seguir Organización",
-                    text: "¿Estás seguro de que quieres seguir esta organización?"
+                    text: "¿Estás seguro de que quieres seguir esta organización?",
+                    confirmButtonText: "Si",
+                    cancelButtonText: "Cancelar"
                 },
                 post: {
                     followOrganisation: true
@@ -356,7 +366,9 @@ angular
             Helpers.swalWarning({
                 options: {
                     title: "Dejar de seguir organización",
-                    text: "¿Estás seguro de que quieres dejar de seguir esta organización?"
+                    text: "¿Estás seguro de que quieres dejar de seguir esta organización?",
+                    confirmButtonText: "Si",
+                    cancelButtonText: "Cancelar"
                 },
                 post: {
                     unfollowOrganisation: true

@@ -17,6 +17,7 @@ require __DIR__ . '/header.php';
         <?php foreach([
             'Are you sure you want to terminate your account?',
             'Yes',
+            'Cancel',
             'Your account has been terminated.',
             'Success!',
         ] AS $translate) { ?>

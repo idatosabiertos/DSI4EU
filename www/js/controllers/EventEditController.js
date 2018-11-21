@@ -25,7 +25,7 @@ angular
                     if (response.data.code == 'ok') {
                         swal({
                             title: 'Success',
-                            text: 'The event has been successfully saved',
+                            text: 'El evento se ha guardado con éxito',
                             type: "success"
                         });
                     } else if (response.data.code == 'error') {

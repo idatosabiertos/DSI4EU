@@ -294,6 +294,7 @@ require __DIR__ . '/header.php';
             'Are you sure you want to terminate your account?',
             'An email will be sent to you to confirm your request.',
             'Yes',
+            'Cancel'
         ] AS $translate) { ?>
         translate.set('<?php echo show_input($translate)?>', '<?php _ehtml($translate)?>');
         <?php } ?>

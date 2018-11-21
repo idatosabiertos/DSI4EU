@@ -55,7 +55,8 @@ angular
                             title: 'Exito!',
                             text: 'Tú perfil ha sido actualizado satisfactoriamente',
                             type: "success",
-                            confirmButtonText: "Ir a mi perfil"
+                            confirmButtonText: "Ir a mi perfil",
+                            cancelButtonText: "Cancelar"
                         }, function () {
                             window.location.href = profilePage;
                         });

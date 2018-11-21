@@ -6,29 +6,19 @@ use DSI\Service\URL;
 if (!isset($urlHandler))
     $urlHandler = new URL();
 ?>
-
-    <div data-ix="close-notification-modal" class="create-paused">
-        <div class="add-post-modal">
-            <h1 class="modal-h1 padding">Thank you for your interest in joining Europe&#x27;s network of digital social
-                innovation</h1>
-            <p class="paragraph">We regret to inform you that, due to a technical issue, we can&#x27;t currently accept
-                new projects and organisations. We&#x27;re working as quickly as we can to get this fixed and look
-                forward to seeing your work on the platform soon!</p>
-            <p class="paragraph">In the meantime, please do sign up to our newsletter through the homepage, and if you
-                have any questions drop us a line at <a
-                        href="mailto:contacto@idatosabiertos.org">contacto@idatosabiertos.org</a>.</p>
-            <div data-ix="close-notification-modal" class="close-modal">+</div>
-        </div>
-    </div>
     <div class="menu-full-screen" data-ix="displaynone">
         <div class="main-menu">
             <div class="main-menu-profile-block w-clearfix">
                 <div class="languages menu-languages w-clearfix">
-                    <?php foreach (['it', 'fr', 'es', 'en', 'de', 'ca'] AS $lang) { ?>
+                    <?php foreach (['es', 'en', 'de'] AS $lang) { ?>
                         <a href="<?php echo (new URL($lang))->home() ?>"
                            class="language log-in-link w-inline-block
                            <?php if (\DSI\Service\Translate::getCurrentLang() == $lang) echo 'active' ?>">
-                            <div class="language menu-li menu-search"><?php echo ucfirst($lang) ?></div>
+                            <?php if ('de' == $lang) { ?>
+                                 <div class="language menu-li menu-search">PT</div>
+                            <?php } else { ?>
+                                 <div class="language menu-li menu-search"><?php echo ucfirst($lang) ?></div>
+                            <?php } ?>
                         </a>
                     <?php } ?>
                 </div>
@@ -193,8 +183,9 @@ if (!isset($urlHandler))
                 <div class="active language log-in-link" data-ix="create-dropdown">
                     <img class="language-icon" src="<?php echo SITE_RELATIVE_PATH ?>/images/ios7-world-outline.png">
                     <div class="create-drop-down-block language-selctor">
-                        <a class="drop-down-link-li" href="/">Español</a>
-                        <a class="drop-down-link-li" href="/en">English</a>
+                        <a class="drop-down-link-li" href="/"><?php _ehtml('Spanish'); ?></a>
+                        <a class="drop-down-link-li" href="/en"><?php _ehtml('English'); ?></a>
+                        <a class="drop-down-link-li" href="/de"><?php _ehtml('Portuguese'); ?></a>
                     </div>
                 </div>
             </div>

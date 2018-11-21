@@ -26,8 +26,8 @@ angular
                         $scope.loading = false;
                         if (response.data.code == 'ok') {
                             swal({
-                                title: 'Success',
-                                text: 'The funding has been successfully created',
+                                title: 'Éxito',
+                                text: 'La financiación ha sido creada con éxito',
                                 type: "success"
                             }, function () {
                                 window.location.href = response.data.url;

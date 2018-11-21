@@ -20,8 +20,8 @@ angular
                     $scope.loading = false;
                     if (response.data.code == 'ok') {
                         swal({
-                            title: 'Success',
-                            text: 'The event has been successfully created',
+                            title: 'Éxito',
+                            text: 'El evento ha sido creado exitosamente',
                             type: "success"
                         }, function () {
                             window.location.href = response.data.url;

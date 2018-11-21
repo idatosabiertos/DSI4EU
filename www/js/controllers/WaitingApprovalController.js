@@ -70,17 +70,19 @@ angular
     $scope.approveItem = function (item) {
       Helpers.swalWarning({
         options: {
-          title: item.projectID ? 'Approve project' : 'Approve organisation',
-          text: item.projectID ? "Are you sure you want to approve this project?" :
-            "Are you sure you want to approve this organisation?"
+          title: item.projectID ? 'Aprobar proyecto' : 'Aprobar organización',
+          text: item.projectID ? "¿Seguro que quieres aprobar este proyecto?" :
+            "¿Estás seguro de que quieres aprobar esta organización?",
+            confirmButtonText: "Si",
+            cancelButtonText: "Cancelar"
         },
         post: {
           approveItem: true,
           id: item.id
         },
         success: {
-          title: item.projectID ? "Project approved" : "Organisation approved",
-          text: item.projectID ? "The project has been approved" : "The organisation has been approved"
+          title: item.projectID ? "Proyecto aprobado" : "Organización aprobada",
+          text: item.projectID ? "El proyecto ha sido aprobado" : "La organización ha sido aprobada"
         },
         successCallback: function () {
           $scope.items = $scope.items.filter(function (_item) {
@@ -96,7 +98,9 @@ angular
         options: {
           title: item.projectID ? 'Eliminar proyecto' : 'Eliminar organización',
           text: item.projectID ? "¿Estás seguro de que quieres eliminar este proyecto?\n" :
-            "¿Estás seguro de que quieres eliminar esta organización?"
+            "¿Estás seguro de que quieres eliminar esta organización?",
+            confirmButtonText: "Si",
+            cancelButtonText: "Cancelar"
         },
         post: {
           rejectItem: true,

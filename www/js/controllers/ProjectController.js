@@ -71,6 +71,8 @@ angular
                 title: translate.get('Delete project'),
                 text: translate.get('Are you sure you want to delete this project?'),
                 type: "warning",
+                confirmButtonText: translate.get("Yes"),
+                cancelButtonText: translate.get("Cancel"),
                 showCancelButton: true,
                 closeOnConfirm: false,
                 showLoaderOnConfirm: true
@@ -121,6 +123,8 @@ angular
                 text: translate.get("Please tell us why you are reporting this project"),
                 type: "input",
                 showCancelButton: true,
+                confirmButtonText: translate.get("Accept"),
+                cancelButtonText: translate.get("Cancel"),
                 closeOnConfirm: false,
                 showLoaderOnConfirm: true,
                 inputPlaceholder: translate.get("Reason for reporting")
@@ -176,7 +180,9 @@ angular
             Helpers.swalWarning({
                 options: {
                     title: translate.get("Cancel Join Request"),
-                    text: translate.get("Are you sure you want to cancel the join request?")
+                    text: translate.get("Are you sure you want to cancel the join request?"),
+                    confirmButtonText: translate.get("Yes"),
+                    cancelButtonText: translate.get("Cancel")
                 },
                 post: {
                     cancelJoinRequest: true
@@ -194,7 +200,9 @@ angular
             Helpers.swalWarning({
                 options: {
                     title: translate.get("Join Project"),
-                    text: translate.get("Are you sure you want to join this project?")
+                    text: translate.get("Are you sure you want to join this project?"),
+                    confirmButtonText: translate.get("Yes"),
+                    cancelButtonText: translate.get("Cancel")
                 },
                 post: {
                     joinProject: true
@@ -212,7 +220,9 @@ angular
             Helpers.swalWarning({
                 options: {
                     title: translate.get("Leave Project"),
-                    text: translate.get("Are you sure you want to leave this project?")
+                    text: translate.get("Are you sure you want to leave this project?"),
+                    confirmButtonText: translate.get("Yes"),
+                    cancelButtonText: translate.get("Cancel")
                 },
                 post: {
                     leaveProject: true
@@ -231,7 +241,9 @@ angular
             Helpers.swalWarning({
                 options: {
                     title: translate.get("Follow Project"),
-                    text: translate.get("Are you sure you want to follow this project?")
+                    text: translate.get("Are you sure you want to follow this project?"),
+                    confirmButtonText: translate.get("Yes"),
+                    cancelButtonText: translate.get("Cancel")
                 },
                 post: {
                     followProject: true
@@ -249,7 +261,9 @@ angular
             Helpers.swalWarning({
                 options: {
                     title: translate.get("Unfollow Project"),
-                    text: translate.get("Are you sure you want to unfollow this project?")
+                    text: translate.get("Are you sure you want to unfollow this project?"),
+                    confirmButtonText: translate.get("Yes"),
+                    cancelButtonText: translate.get("Cancel")
                 },
                 post: {
                     unfollowProject: true

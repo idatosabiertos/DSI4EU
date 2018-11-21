@@ -1,17 +1,15 @@
 <?php
 /** @var $urlHandler \DSI\Service\URL */
 ?>
-<div class="additional" data-ix="fadeinuponload-3">Bisher haben</div>
 <div class="stat-text w-row">
     <div class="w-col w-col-5">
         <div class="number-of-orgs" data-ix="fadeinuponload-3"><?php echo number_format($organisationsCount, 0, ',', '.') ?></div>
-        <a class="organisations-2" data-ix="fadeinuponload-4" href="<?php echo $urlHandler->organisations() ?>">Organisationen</a>
+        <a class="organisations-2" data-ix="fadeinuponload-4" href="<?php echo $urlHandler->organisations() ?>">Organizações</a>
     </div>
     <div class="w-col w-col-2">
     </div>
     <div class="w-col w-col-5">
         <div class="number-of-orgs pro" data-ix="fadeinuponload-6"><?php echo number_format($projectsCount, 0, ',', '.') ?></div>
-        <a class="organisations-2" data-ix="fadeinuponload-7" href="<?php echo $urlHandler->projects() ?>">Projekten</a>
+        <a class="organisations-2" data-ix="fadeinuponload-7" href="<?php echo $urlHandler->projects() ?>">Projetos</a>
     </div>
 </div>
-<div class="additional" data-ix="fadeinuponload-5">zusammengearbeitet.</div>

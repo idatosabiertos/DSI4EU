@@ -166,6 +166,8 @@ angular
                     "¿Estás seguro de que quieres volver a habilitar a este usuario?",
                 type: "warning",
                 showCancelButton: true,
+                confirmButtonText: "Si",
+                cancelButtonText: "Cancelar",
                 closeOnConfirm: false,
                 showLoaderOnConfirm: true
             }, function () {
@@ -218,6 +220,8 @@ angular
                 text: "Por favor, dinos por qué estás reportando este perfil",
                 type: "input",
                 showCancelButton: true,
+                confirmButtonText: "Enviar",
+                cancelButtonText: "Cancelar",
                 closeOnConfirm: false,
                 showLoaderOnConfirm: true,
                 inputPlaceholder: "Razón del reporte"

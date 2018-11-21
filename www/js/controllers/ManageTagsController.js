@@ -63,6 +63,8 @@ angular
             swal({
                 title: "Eliminar tag",
                 text: "¿Estás seguro de que quieres eliminar este tag?",
+                confirmButtonText: "Si",
+                cancelButtonText: "Cancelar",
                 type: "warning",
                 showCancelButton: true,
                 closeOnConfirm: false,

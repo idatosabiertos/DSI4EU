@@ -49,6 +49,7 @@ angular
                 showCancelButton: true,
                 confirmButtonColor: "#DD6B55",
                 confirmButtonText: "Si, continuar!",
+                cancelButtonText:"Cancelar",
                 closeOnConfirm: false
             }, function () {
                 $http.post(url, {
@@ -91,6 +92,7 @@ angular
                 showCancelButton: true,
                 confirmButtonColor: "#DD6B55",
                 confirmButtonText: "Si, Continuar!",
+                cancelButtonText: "Cancelar",
                 closeOnConfirm: false
             }, function () {
                 $http.post(url, {
@@ -134,6 +136,7 @@ angular
                 showCancelButton: true,
                 confirmButtonColor: "#DD6B55",
                 confirmButtonText: "Si, Continuar!",
+                cancelButtonText: "Cancelar",
                 closeOnConfirm: false
             }, function () {
                 $http.post(url, {
@@ -178,6 +181,7 @@ angular
                 showCancelButton: true,
                 confirmButtonColor: "#DD6B55",
                 confirmButtonText: "Si, Continuar!",
+                cancelButtonText: "Cancelar",
                 closeOnConfirm: false
             }, function () {
                 $http.post(url, {

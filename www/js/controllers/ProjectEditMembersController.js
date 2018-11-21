@@ -29,6 +29,7 @@ angular
                     showCancelButton: true,
                     confirmButtonColor: "#DD6B55",
                     confirmButtonText: translate.get("Continue"),
+                cancelButtonText: translate.get("Cancel"),
                     closeOnConfirm: false,
                     showLoaderOnConfirm: true
                 },
@@ -56,6 +57,7 @@ angular
                     type: "info",
                     showCancelButton: true,
                     confirmButtonColor: "#DD6B55",
+                    cancelButtonText: translate.get("Cancel"),
                     confirmButtonText: translate.get("Continue"),
                     closeOnConfirm: false,
                     showLoaderOnConfirm: true
@@ -86,6 +88,7 @@ angular
                     showCancelButton: true,
                     confirmButtonColor: "#DD6B55",
                     confirmButtonText: translate.get("Continue"),
+                    cancelButtonText: translate.get("Cancel"),
                     closeOnConfirm: false,
                     showLoaderOnConfirm: true
                 },
@@ -113,6 +116,7 @@ angular
                     showCancelButton: true,
                     confirmButtonColor: "#DD6B55",
                     confirmButtonText: translate.get("Continue"),
+                    cancelButtonText: translate.get("Cancel"),
                     closeOnConfirm: false,
                     showLoaderOnConfirm: true
                 },
@@ -140,6 +144,7 @@ angular
                     showCancelButton: true,
                     confirmButtonColor: "#DD6B55",
                     confirmButtonText: translate.get("Continue"),
+                    cancelButtonText: translate.get("Cancel"),
                     closeOnConfirm: false,
                     showLoaderOnConfirm: true
                 },
@@ -167,6 +172,7 @@ angular
                     showCancelButton: true,
                     confirmButtonColor: "#DD6B55",
                     confirmButtonText: translate.get("Continue"),
+                    cancelButtonText: translate.get("Cancel"),
                     closeOnConfirm: false,
                     showLoaderOnConfirm: true
                 },
@@ -194,6 +200,7 @@ angular
                     showCancelButton: true,
                     confirmButtonColor: "#DD6B55",
                     confirmButtonText: translate.get("Continue"),
+                    cancelButtonText: translate.get("Cancel"),
                     closeOnConfirm: false,
                     showLoaderOnConfirm: true
                 },

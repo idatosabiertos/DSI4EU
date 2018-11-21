@@ -64,7 +64,7 @@ if (!isset($urlHandler))
                                                             </div>
                                                         </div>
                                                         <div ng-show="member.isOwner">
-                                                            Is Owner
+                                                            <?php _ehtml('Project Owner') ?>
                                                         </div>
                                                         <div ng-hide="member.isOwner">
                                                             <a ng-hide="member.isOwner" class="remove-user" href="#"
@@ -97,7 +97,7 @@ if (!isset($urlHandler))
                             <div class="step-window w-tab-pane" data-w-tab="Tab 2">
                                 <div class="w-row">
                                     <div class="creator-col w-col w-col-4 w-col-stack">
-                                        <h2><?php _ehtml('Add existing DSI4EU user') ?></h2>
+                                        <h2><?php _ehtml('Add existing DSI4eu user') ?></h2>
                                         <p><?php _ehtml('You can add existing users to your project.') ?></p>
                                         <p>
                                             <?php _ehtml('After being notified the user will [...]') ?>
@@ -265,6 +265,7 @@ if (!isset($urlHandler))
         <?php foreach([
             'You are about to invite this user to join the project',
             'Continue',
+            'Cancel',
             'The user has been invited to join the project.',
             'You are about to invite this person to join the project',
             'An invitation to join the project has been sent by email.',

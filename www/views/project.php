@@ -226,7 +226,7 @@ require __DIR__ . '/header.php';
                         <p class="post-intro"><?php _ehtml("See what we've been up to and join in the conversation!") ?></p>
                         <div class="page-posts">
                             <div class="card">
-                                <div class="post-indicator">Latest post</div>
+                                <div class="post-indicator"><?php _ehtml('Latest post') ?></div>
                                 <div class="proj-post-block" ng-repeat="post in project.posts" ng-cloak>
                                     <div class="user-detail">
                                         <div class="involved-card user-post">
@@ -433,6 +433,9 @@ require __DIR__ . '/header.php';
           'Delete project',
           'Are you sure you want to delete this project?',
           'Deleted',
+          'Yes',
+          'Cancel',
+          'Accept',
           'The project has been deleted.',
           'Report this project',
           'Please tell us why you are reporting this project',
