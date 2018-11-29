@@ -85,18 +85,7 @@ $showAdvancedSearch = (
                                     </div>
 
                                     <div>
-                                        <div class="advanced-search w-row">
-                                            <div class="w-col w-col-6">
-                                                <a class="w-clearfix w-inline-block" href="#"
-                                                   ng-click="showAdvancedSearch = !showAdvancedSearch">
-                                                    <div class="adv-text"><?php _ehtml('Advanced filters')?></div>
-                                                    <div ng-class="{showAdvancedSearch: showAdvancedSearch}"
-                                                         class="arrow advancedSearchArrow"></div>
-                                                </a>
-                                            </div>
-                                            <div class="w-col w-col-6"></div>
-                                        </div>
-                                        <div class="adv-options" ng-show="showAdvancedSearch">
+                                        <div class="adv-options">
                                             <label><?php _ehtml('Country')?></label>
                                             <select class="w-select" id="field" name="field"
                                                     ng-model="filter.countryID">
