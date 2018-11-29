@@ -115,7 +115,7 @@ form.add-skill-section, form.add-language-section {
 }
 
 .alphabet-link.selected {
-    background: #1dc9a0;
+    background: #ff8036;
     color: black;
 }
 
@@ -304,7 +304,7 @@ div.error {
 }
 
 .select2-container--open .select2-dropdown--below {
-    border-top: 1px solid #1dc9a0;
+    border-top: 1px solid #ff8036;
     border-top-left-radius: 3px;
     border-top-right-radius: 3px;
 }
@@ -397,7 +397,7 @@ div.error {
 
 .sweet-alert .sa-icon.sa-success .sa-line {
     height: 5px;
-    background-color: #1dc9a0;
+    background-color: #ff8036;
     display: block;
     border-radius: 2px;
     position: absolute;
@@ -421,7 +421,7 @@ div.error {
     padding: 10px 32px;
     margin: 26px 5px 0 5px;
     cursor: pointer;
-    background-color: #1dc9a0 !important;
+    background-color: #ff8036 !important;
 }
 
 .sweet-alert p {
@@ -606,7 +606,7 @@ div.error {
     padding: 10px 32px;
     margin: 26px 5px 0 5px;
     cursor: pointer;
-    background-color: #1dc9a0 !important;
+    background-color: #ff8036 !important;
     box-shadow: white 0 0 0 0 !important;
 }
 
