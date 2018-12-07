@@ -1834,7 +1834,7 @@ strong {
   bottom: 30px;
   min-width: auto;
   padding: 7px 20px;
-  border: 1px solid #ff0b57;
+  border: 1px solid #ff3c3c;
   border-radius: 3px;
   background-color: transparent;
   -webkit-transition: all 200ms ease;
@@ -2455,7 +2455,7 @@ strong {
   width: 80%;
   padding-top: 10px;
   padding-bottom: 10px;
-  border: 1px solid #ff0b57;
+  border: 1px solid #ff3c3c;
   border-radius: 25px;
   background-color: #fff;
   font-family: Montserrat, sans-serif;
@@ -2465,7 +2465,7 @@ strong {
 }
 
 .dsi-button.top-filter {
-  border: 1px solid #ff0b57;
+  border: 1px solid #ff3c3c;
   background-color: transparent;
   color: #ff0b57;
 }
@@ -2481,7 +2481,7 @@ strong {
   padding-top: 7px;
   padding-bottom: 7px;
   float: right;
-  border: 1px solid #ff0b57;
+  border: 1px solid #ff3c3c;
   background-color: #ff3c3c;
   color: #380101;
 }
@@ -2498,7 +2498,7 @@ strong {
   width: 80%;
   padding-top: 10px;
   padding-bottom: 10px;
-  border: 1px solid #ff0b57;
+  border: 1px solid #ff3c3c;
   border-radius: 25px;
   background-color: #ff3c3c;
   font-family: Montserrat, sans-serif;
@@ -2578,7 +2578,7 @@ strong {
   width: auto;
   padding-right: 20px;
   padding-left: 20px;
-  border: 1px solid #ff0b57;
+  border: 1px solid #ff3c3c;
   background-color: transparent;
   font-family: 'Open Sans', sans-serif;
   color: #ff0b57;
@@ -2688,7 +2688,7 @@ strong {
 }
 
 .card-thin:hover {
-  border: 1px solid #ff0b57;
+  border: 1px solid #ff3c3c;
 }
 
 .card-logo-small {
@@ -5362,7 +5362,7 @@ strong {
   height: auto;
   min-height: 75px;
   padding: 10px;
-  border: 1px solid #ff0b57;
+  border: 1px solid #ff3c3c;
   background-color: #bbf1e4;
 }
 
@@ -5860,7 +5860,7 @@ strong {
   padding-top: 0px;
   padding-bottom: 0px;
   float: right;
-  border: 1px solid #ff0b57;
+  border: 1px solid #ff3c3c;
   border-radius: 3px;
   background-color: #fff;
   font-family: Montserrat, sans-serif;
@@ -7998,7 +7998,7 @@ strong {
   margin-right: 38px;
   padding: 12px 20px 9px;
   float: right;
-  border: 1px solid #ff0b57;
+  border: 1px solid #ff3c3c;
   border-radius: 25px;
   background-color: #ff3c3c;
   -webkit-transition: all 200ms ease;
@@ -9603,7 +9603,7 @@ height: 186px;
 
 .side-bar-action {
   padding: 10px 20px;
-  border: 1px solid #ff0b57;
+  border: 1px solid #ff3c3c;
   border-radius: 35px;
   background-color: rgba(29, 201, 160, .22);
   -webkit-transition: all 200ms ease;
@@ -10024,7 +10024,7 @@ height: 186px;
   margin-right: auto;
   margin-left: auto;
   padding: 10px;
-  border: 1px solid #ff0b57;
+  border: 1px solid #ff3c3c;
   background-color: transparent;
   color: #ff0b57;
   text-align: center;
@@ -10051,7 +10051,7 @@ height: 186px;
   margin-bottom: 15px;
   padding-top: 12px;
   padding-bottom: 12px;
-  border: 1px solid #ff0b57;
+  border: 1px solid #ff3c3c;
   border-radius: 25px;
   background-color: #ff3c3c;
   color: #380101;
