@@ -7921,6 +7921,7 @@ strong {
   font-size: 18px;
   line-height: 20px;
   font-weight: 400;
+      max-width: 85%;
 }
 
 .menu-li.login-li:hover {
