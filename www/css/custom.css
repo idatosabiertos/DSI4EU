@@ -1,17 +1,30 @@
 .twitter-block {
-    height: 100px;
+       background-color: #dad3ce;
+        height: 86px;
 }
 
 .homepage-twitter-logo {
+
     margin-top: 18px;
-    margin-left: 29px;
+    margin-left: 78px;
+    opacity: 1;
 }
 
 .twitter-text {
     margin-left: 10px;
-    font-size: 18px;
-    line-height: 23px;
     margin-right: 20%;
+    position: relative;
+    width: 90%;
+    margin-top: 0;
+    padding-top: 15px;
+    padding-left: 35px;
+    float: left;
+    font-family: Montserrat, sans-serif;
+    color: #380101;
+    font-size: 16px;
+    line-height: 28px;
+    text-transform: uppercase;
+}
 }
 
 .w-form {
