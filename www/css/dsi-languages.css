@@ -8188,7 +8188,7 @@ strong {
   margin-top: 0px;
   margin-right: auto;
   margin-left: auto;
-  background-color: #f7ebe1;
+  background-color: #dad3ce;;
   box-shadow: none;
 }
 
@@ -8203,6 +8203,7 @@ strong {
   font-weight: 900;
   text-transform: uppercase;
       letter-spacing: 3px;
+          text-shadow: 0px 4px 3px rgb(101, 62, 36), 0px 8px 13px rgba(175, 47, 0, 0.1), 0px 18px 23px rgba(107, 8, 8, 0.1);
 }
 
 .home-hero-h1 span{
@@ -8571,7 +8572,7 @@ strong {
   display: block;
   width: 650px;
   margin-right: auto;
-  margin-bottom: 29px;
+  margin-bottom: 0px;
   margin-left: auto;
   padding-top: 50px;
   padding-left: 0px;
@@ -8629,23 +8630,23 @@ strong {
 }
 
 .number-of-orgs {
-  position: static;
-  left: 371px;
-  top: 74px;
-  display: block;
-  margin: 25px auto;
-  padding-top: 25px;
-  padding-left: 15px;
-  border-top: 1px none #380101;
-  border-right: 1px none #380101;
-  border-left: 1px none #380101;
-  background-color: transparent;
-  font-family: Montserrat, sans-serif;
-  color: #fff;
-  font-size: 94px;
-  line-height: 94px;
-  font-weight: 700;
-  text-align: center;
+    position: static;
+    left: 371px;
+    top: 74px;
+    display: block;
+    margin: 25px auto;
+    padding-top: 25px;
+    padding-left: 15px;
+    border-top: 1px none #380101;
+    border-right: 1px none #380101;
+    border-left: 1px none #380101;
+    background-color: transparent;
+    font-family: Montserrat, sans-serif;
+    color: #fff;
+    font-size: 74px;
+    line-height: 34px;
+    font-weight: 700;
+    text-align: center;
 }
 
 .number-of-orgs.pro {
@@ -8974,11 +8975,11 @@ height: 186px;
 }
 
 .stats-bg {
-  height: 500px;
-  background-color: #a09083;
-  background-position: 0px 0px;
-  background-size: auto;
-  background-repeat: repeat;
+    height: 340px;
+    background-color:#716c69;
+    background-position: 0px 0px;
+    background-size: auto;
+    background-repeat: repeat;
 }
 
 .stats-bg.datavis {
