@@ -712,3 +712,7 @@ body#tinymce.mce-content-body {
 .twitter-block a {
     color: white;
 }
+
+a.case-study-ind.w-inline-block:hover {
+    background-color: #ffffffa3;
+}
