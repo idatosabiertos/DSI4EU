@@ -5,6 +5,7 @@ use \DSI\Service\URL;
 <!DOCTYPE html>
 <html data-wf-site="56e2e31a1b1f8f784728a08c" data-wf-page="56fbef6ecf591b312d56f8be">
 <head>
+    <script src='https://www.google.com/recaptcha/api.js'></script>
     <?php require __DIR__ . '/partialViews/head.php' ?>
 </head>
 <body ng-app="DSIApp" class="login-body">
@@ -72,28 +73,14 @@ use \DSI\Service\URL;
             <br/><br/>
             <div class="or-login-with">- <?php _ehtml('or log in with')?> -</div>
             <div class="w-row">
-                <div class="w-col w-col-3 w-col-small-3 w-col-tiny-6">
+                <div class="w-col w-col-6 w-col-small-6 w-col-tiny-6">
                     <a class="log-in-with-link w-inline-block" href="<?php echo URL::loginWithFacebook() ?>">
                         <img class="login-with-img" src="<?php echo SITE_RELATIVE_PATH ?>/images/facebook-2.png"
                              width="25">
                         <div class="log-in-with-text">Facebook</div>
                     </a>
                 </div>
-                <div class="w-col w-col-3 w-col-small-3 w-col-tiny-6">
-                    <a class="log-in-with-link w-inline-block" href="<?php echo URL::loginWithTwitter() ?>">
-                        <img class="login-with-img" src="<?php echo SITE_RELATIVE_PATH ?>/images/twitter.png"
-                             width="25">
-                        <div class="log-in-with-text">Twitter</div>
-                    </a>
-                </div>
-                <div class="w-col w-col-3 w-col-small-3 w-col-tiny-6">
-                    <a class="log-in-with-link w-inline-block" href="<?php echo URL::loginWithGoogle() ?>">
-                        <img class="login-with-img" src="<?php echo SITE_RELATIVE_PATH ?>/images/google-plus.png"
-                             width="25">
-                        <div class="log-in-with-text">Google +</div>
-                    </a>
-                </div>
-                <div class="w-col w-col-3 w-col-small-3 w-col-tiny-6">
+                <div class="w-col w-col-6 w-col-small-6 w-col-tiny-6">
                     <a class="log-in-with-link w-inline-block" href="<?php echo URL::loginWithGitHub() ?>">
                         <img class="login-with-img" src="<?php echo SITE_RELATIVE_PATH ?>/images/github.png" width="25">
                         <div class="log-in-with-text">GitHub</div>
@@ -104,7 +91,6 @@ use \DSI\Service\URL;
     </div>
 </div>
 
-<script src='https://www.google.com/recaptcha/api.js'></script>
 
 <script type="text/javascript"
         src="<?php echo SITE_RELATIVE_PATH ?>/js/controllers/LoginController.js?<?php \DSI\Service\Sysctl::echoVersion() ?>"></script>
